@@ -6,6 +6,7 @@ import Services from './(Services)/Services'
 import Story from './(Story)/Story'
 import Startups from './(Startups)/Startups'
 import Blog from './(Blog)/Blog'
+import Newsletter from './Newsletter'
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
       <Story/>
       <Startups/>
       <Blog/>
+      <Newsletter/>
     </div>  
   )
 }

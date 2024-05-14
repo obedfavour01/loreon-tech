@@ -16,27 +16,37 @@ type BlogPost = {
 const BlogPost = ({ tags, title, content, authorImg, authorName, datePosted, readLen }: BlogPost) => {
   return (
     <div>
-      <Button className='rounded-xl' >{tags}</Button>
+      <Button 
+        size="sm" 
+        className='rounded-3xl text-xs' >
+          {tags}
+      </Button>
 
-      <h1 className='font-bold text-xl'>{title}
-        </h1>
+      <h1 className='font-bold mt-4 text-xl text-white'>{title}
+      </h1>
 
-        <p className='text-base font-normal'>
+      <p className='text-base font-normal my-4 text-white/50'>
         {content}
-        </p>
+      </p>
 
-        <div>
-          <div className=' flex rounded-full w-12 h-12'>
-                <Image src={"/assets/images/woman.png"} width={48} height={48} alt='avatar' className='rounded-full'/>
+      <div className='flex gap-6'>
+        <div className='flex rounded-full w-12 h-12'>
+          <Image
+            src={"/assets/images/woman.png"}
+            width={48}
+            height={48}
+            alt='avatar'
+            className='rounded-full object-contain'
+          />
 
-                <div>
-                  <p>{authorName}</p>
-                  <p>{datePosted} · {readLen} min read</p>
-                </div>
-          </div>
         </div>
+        <div>
+          <p className='font-bold text-sm text-white'>{authorName}</p>
+          <p className='font-light text-xs text-white/50'>{datePosted} · {readLen} min read</p>
+        </div>
+      </div>
     </div>
-    
+
   )
 }
 
