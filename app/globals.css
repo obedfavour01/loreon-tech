@@ -81,8 +81,14 @@
     .nav__item{
       @apply text-[#9d9d9d] text-sm
     }
+    /* src/styles/global.css */
+.no-ring:focus {
+  @apply ring-0 ring-offset-0 ring-opacity-0;
+}
 
-
+.footer_header{
+ @apply text-[#FFFFFF] font-semibold  text-sm mb-4
+}
 
     /* 
       BlogPost

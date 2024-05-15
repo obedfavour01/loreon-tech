@@ -50,7 +50,7 @@ const Startups = () => {
                     <Image src="/assets/images/cube.png" alt="logo" width={60} height={60} className='object-contain' />
                     <Image src="/assets/images/dapr.png" alt="logo" width={60} height={60} className='object-contain' />
                     <Image src="/assets/images/dragon.png" alt="logo" width={60} height={60} className='object-contain' />
-                    <Image src="/assets/images/" alt="logo" width={60} height={60} className='object-contain' />
+                    <Image src="/assets/images/flash.png" alt="logo" width={60} height={60} className='object-contain' />
                     <Image src="/assets/images/core.png" alt="logo" width={60} height={60} className='object-contain' />
                     <Image src="/assets/images/rook.png" alt="logo" width={60} height={60} className='object-contain' />
                 </div>

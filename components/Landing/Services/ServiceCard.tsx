@@ -20,18 +20,18 @@ const ServiceCard = ({ title }: { title: string }) => {
 
 
         <div className='w-20 h-20 flex justify-center absolute items-center bottom-0 right-0 rounded-full z-[999] bg-red-700'>
-                wow
-          </div>
+          wow
         </div>
+      </div>
 
-        <div>
-          <p className='text-lg text-[#5c5c5c] z-30'>
-            Lorem ipsum dolor sit amet consectetur adipiscing 
-            elit Ut et massa mi. Aliquam in hendrerit urna. 
-            Pellentesque sit amet sapien fringilla, 
-            mattis ligula consectetur, ultrices mauris.
-          </p>
-        </div>
+      <div>
+        <p className='text-lg text-[#5c5c5c] z-30'>
+          Lorem ipsum dolor sit amet consectetur adipiscing
+          elit Ut et massa mi. Aliquam in hendrerit urna.
+          Pellentesque sit amet sapien fringilla,
+          mattis ligula consectetur, ultrices mauris.
+        </p>
+      </div>
     </div>
   )
 }

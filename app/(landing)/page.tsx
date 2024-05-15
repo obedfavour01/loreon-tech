@@ -1,12 +1,17 @@
 
 import Navbar from '@/components/Navbar'
 import React from 'react'
-import Hero from './(Hero)/Hero'
-import Services from './(Services)/Services'
-import Story from './(Story)/Story'
-import Startups from './(Startups)/Startups'
-import Blog from './(Blog)/Blog'
-import Newsletter from './Newsletter'
+
+import Story from '../../components/Landing/Story'
+import Startups from '../../components/Landing/Startups'
+
+import Newsletter from '../../components/Landing/Newsletter'
+import Reviews from '../../components/Landing/Reviews'
+import FAQ from '../../components/Landing/FAQ/FAQ'
+import Footer from '../../components/Landing/Footer/Footer'
+import Hero from '@/components/Landing/Hero/Hero'
+import Services from '@/components/Landing/Services/Services'
+import Blog from '@/components/Landing/Blog/Blog'
 
 const page = () => {
   return (
@@ -18,6 +23,9 @@ const page = () => {
       <Startups/>
       <Blog/>
       <Newsletter/>
+      <Reviews/>
+      <FAQ/>
+      <Footer/>
     </div>  
   )
 }
