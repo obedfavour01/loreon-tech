@@ -1,6 +1,6 @@
 import React from 'react'
 import IntroText from './IntroText'
-import Gallery from './Gallery'
+import Gallery from '../../../components/Landing/Hero/Gallery'
 import Stat from './Stat'
 import Tags from './Tags'
 

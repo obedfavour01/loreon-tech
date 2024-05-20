@@ -78,11 +78,21 @@
     body {
       @apply bg-background text-foreground;
     }
+
+    .red{
+     @apply border border-red-500
+    }
     .nav__item{
       @apply text-[#9d9d9d] text-sm
     }
+    /* src/styles/global.css */
+.no-ring:focus {
+  @apply ring-0 ring-offset-0 ring-opacity-0;
+}
 
-
+.footer_header{
+ @apply text-[#FFFFFF] font-semibold  text-sm mb-4
+}
 
     /* 
       BlogPost
@@ -90,4 +100,10 @@
     */
 
     
+    /* gradient */
+
+    .community-gradient{
+      background: linear-gradient(180deg, rgba(74, 186, 88, 0.1) 0%, #4ABA58 100%);
+
+    }
   }
