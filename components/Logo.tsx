@@ -1,17 +1,20 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Logo = () => {
   return (
-    <div>
+    <Link href={'/'}>
+        <div>
             <Image
               src={"/assets/images/loreonlogo.png"}
-              className = "w-[150px] h-[36px]"
+              className = "w-[150px] h-[36px] object-contain"
               alt='logo'
               width = {300}
               height= {100}
               />
         </div>
+    </Link>
   )
 }
 

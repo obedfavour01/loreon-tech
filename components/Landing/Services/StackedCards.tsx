@@ -3,7 +3,7 @@ import React from 'react'
 
 const StackedCards = () => {
   return (
-   <div className=" relative flex justify-center w-full h-48 mt-6 border-2 overflow-hidden border-red-600 ">
+   <div className=" relative flex justify-center w-full h-full mt-6  overflow-hidden ">
       <div className="absolute bg-bg_blue rounded-5xl shadow-md h-48 w-56   p-4">
       
       </div>

@@ -32,6 +32,8 @@ const config = {
         loreonorange:"#FF8B00",
         loreongreen: "#95DFB5",
         loreongray: "#393939",
+        aboutgray:"#586283",
+        aboutgreen: "#4ABA58",
 
 
         border: "hsl(var(--border))",
@@ -94,8 +96,16 @@ const config = {
         bg_white: "#FFFFFF",
         bg_blue: "#1362F3",
         bg_orange : "#FF8D03",
-        bg_footer: "#1D2329"
-      }
+        bg_footer: "#1D2329",
+        bg_about_gray: "#F0F6FF"
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(180deg, rgba(74, 186, 88, 0.1) 0%, #4ABA58 100%)',
+      },
+      boxShadow: {
+        'custom-shadow': '0px 8px 20px 0px #1211271A',
+      },
+    
     },
   },
   plugins: [require("tailwindcss-animate")],

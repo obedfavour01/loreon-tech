@@ -78,6 +78,10 @@
     body {
       @apply bg-background text-foreground;
     }
+
+    .red{
+     @apply border border-red-500
+    }
     .nav__item{
       @apply text-[#9d9d9d] text-sm
     }
@@ -96,4 +100,10 @@
     */
 
     
+    /* gradient */
+
+    .community-gradient{
+      background: linear-gradient(180deg, rgba(74, 186, 88, 0.1) 0%, #4ABA58 100%);
+
+    }
   }

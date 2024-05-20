@@ -6,7 +6,7 @@ const ServiceCard = ({ title }: { title: string }) => {
 
     <div className='mt-7'>
 
-      <div className='flex flex-col rounded-5xl bg-[#2F2F2F] relative'>
+      <div className='flex flex-col h-80  rounded-5xl bg-[#2F2F2F] relative'>
 
         <div className="basis-2/12">
           <h1 className='font-semibold text-2xl text-white px-4 py-4'>{title}</h1>
@@ -24,7 +24,7 @@ const ServiceCard = ({ title }: { title: string }) => {
         </div>
       </div>
 
-      <div>
+      <div className='mt-8'>
         <p className='text-lg text-[#5c5c5c] z-30'>
           Lorem ipsum dolor sit amet consectetur adipiscing
           elit Ut et massa mi. Aliquam in hendrerit urna.

@@ -10,11 +10,11 @@ const Navbar = () => {
        <Logo/>
 
         <div className='flex gap-6 items-center'>
-            <NavItem text = "About"/>
-            <NavItem text = "Projects"/>
-            <NavItem text = "Training"/>
-            <NavItem text = "Community"/>
-            <NavItem text = "Blogs & News"/>
+            <NavItem text = "About" href='/about-us'/>
+            <NavItem text = "Projects" href='/about-us'/>
+            <NavItem text = "Training" href='/about-us'/>
+            <NavItem text = "Community" href='/about-us'/>
+            <NavItem text = "Blogs & News" href='/about-us'/>
 
             <Button className='bg-bg_blue text-white rounded-xl'> Get started</Button>
         </div>

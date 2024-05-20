@@ -16,7 +16,7 @@ import Blog from '@/components/Landing/Blog/Blog'
 const page = () => {
   return (
     <div>
-      <Navbar />
+    
       <Hero />
       <Services/>
       <Story/>
@@ -25,7 +25,7 @@ const page = () => {
       <Newsletter/>
       <Reviews/>
       <FAQ/>
-      <Footer/>
+
     </div>  
   )
 }
