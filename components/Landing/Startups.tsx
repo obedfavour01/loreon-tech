@@ -3,12 +3,12 @@ import React from 'react'
 
 const Startups = () => {
     return (
-        <section className='mx-32'>
-            <div className='flex justify-between gap-36'>
+        <section className='mx-32 xs:max-lg:mx-4'>
+            <div className='flex flex-col justify-between gap-36'>
                 <div className='basis-1/2'>
                     <header className='text-4xl font-bold'>We support early stage
                         startups and leading tech
-                        giants.
+                        giants. 
                     </header>
 
                     <article className='mt-4 leading-[28px] pr-6 '>
@@ -42,7 +42,7 @@ const Startups = () => {
 
 
             <div className='my-12 px-10'>
-                <div className='flex gap-12 my-12 justify-center'>
+                <div className='flex xs:max-lg:flex-wrap gap-12 my-12 justify-center'>
                     <Image src="/assets/images/core.png" alt="logo" width={60} height={60} className='object-contain' />
                     <Image src="/assets/images/contour.png" alt="logo" width={60} height={60} className='object-contain' />
                     <Image src="/assets/images/cri.png" alt="logo" width={60} height={60} className='object-contain' />
@@ -52,9 +52,9 @@ const Startups = () => {
                     <Image src="/assets/images/dragon.png" alt="logo" width={60} height={60} className='object-contain' />
                     <Image src="/assets/images/flash.png" alt="logo" width={60} height={60} className='object-contain' />
                     <Image src="/assets/images/core.png" alt="logo" width={60} height={60} className='object-contain' />
-                    <Image src="/assets/images/rook.png" alt="logo" width={60} height={60} className='object-contain' />
+                    <Image src="/assets/images/rook.png" alt="logo" width={60} height={60} className='object-contain xs:max-lg:hidden' />
                 </div>
-                <div className='flex gap-12 justify-center'>
+                <div className='flex xs:max-lg:flex-wrap gap-12 justify-center'>
                     <Image src="/assets/images/spiffe.png" alt="logo" width={60} height={60} className='object-contain'/>
                     <Image src="/assets/images/core.png" alt="logo" width={60} height={60} className='object-contain'/>
                     <Image src="/assets/images/core.png" alt="logo" width={60} height={60} className='object-contain'/>

@@ -12,7 +12,7 @@ const Reviews = () => {
     return (
         <section className='overflow-hidden' >
 
-            <div className='flex items-center mx-32'>
+            <div className='flex items-center xs:max-lg:mx-6 mx-32'>
                 <div>
                     <p className='text-sm font-normal text-loreonblue/55'>What customers says</p>
 
@@ -28,7 +28,7 @@ const Reviews = () => {
 
 
 
-            <div className='ml-40  mt-6border-2 border-red-500'>
+            <div className='ml-40  xs:max-lg:ml-12 mt-6 '>
                 <Carousel className="w-full">
                     <CarouselContent className="-ml-1">
                         {Array.from({ length: 5 }).map((_, index) => (

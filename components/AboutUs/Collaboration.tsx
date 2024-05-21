@@ -55,9 +55,9 @@ const Collaboration = () => {
             </div>
 
             <div className='flex gap-5 my-6'>
-                <div className='py-4 px-6 rounded-lg flex bg-bg_about_gray basis-1/2'>
+                <div className='py-4 px-6 rounded-lg flex bg-bg_about_gray basis-1/2 gap-4'>
 
-                <Image alt='' width={200} height={300} src={"/assets/images/docker.svg"} />
+                <Image alt='' width={200} height={300} src={"/assets/images/docker.svg"}  className='w-24'/>
 
                     <div>
                         <h3 className='text-base font-semibold'>Open Access to Expert Strategies</h3>
@@ -65,9 +65,9 @@ const Collaboration = () => {
                     </div>
                 </div>
 
-                <div className='py-4 px-6 rounded-lg flex bg-bg_about_gray basis-1/2'>
+                <div className='py-4 px-6 rounded-lg flex bg-bg_about_gray basis-1/2 gap-4'>
 
-                    <Image alt='' width={200} height={300} src={"/assets/images/docker.svg"} />
+                    <Image alt='' width={200} height={300} src={"/assets/images/docker.svg"} className='w-24'/>
                     <div>
                         <h3 className='text-base font-semibold'>Addressing technology vulnerabilities</h3>
                         <p className='font-light text-xs text-aboutgray'>Lorem ipsum dolor sit amet consectetur adipiscing elit ....</p>

@@ -4,10 +4,10 @@ import React from 'react'
 const StackedCards = () => {
   return (
    <div className=" relative flex justify-center w-full h-full mt-6  overflow-hidden ">
-      <div className="absolute bg-bg_blue rounded-5xl shadow-md h-48 w-56   p-4">
+      <div className="absolute bg-[#0072EF80] rounded-5xl shadow-md h-48 w-[320px] p-4 top-4">
       
       </div>
-      <div className="absolute bg-bg_blue rounded-5xl shadow-md mx-auto h-48 p-4 w-80 top-6 ">
+      <div className="absolute bg-[#0072EF80] rounded-5xl shadow-md mx-auto h-48 p-4 w-[360px] top-8 ">
         
       </div>
       <div className="absolute bg-white overflow-hidden rounded-5xl shadow-md w-full h-48 top-12">

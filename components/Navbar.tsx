@@ -3,13 +3,15 @@ import React from 'react'
 import NavItem from './NavItem'
 import { Button } from './ui/button'
 import Logo from './Logo'
+import MobileSidebar from './MobileSidebar'
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between items-center px-20 pt-9'>
+    <nav className='flex justify-between items-center px-20 pt-9 xs:max-lg:px-2 xs:max-lg:pt-1'>
        <Logo/>
 
-        <div className='flex gap-6 items-center'>
+            <MobileSidebar/>
+        <div className='flex gap-6 items-center xs:max-lg:hidden'>
             <NavItem text = "About" href='/about-us'/>
             <NavItem text = "Projects" href='/about-us'/>
             <NavItem text = "Training" href='/about-us'/>
