@@ -19,9 +19,30 @@ const Services = () => {
 
 
       <div className='flex xs:max-lg:flex-col gap-8 justify-center'>
-        <ServiceCard title={"Delivering Services"} />
-        <ServiceCard title={"Delivering Services"} />
-        <ServiceCard title={"Delivering Services"} />
+        <ServiceCard
+          title={"Delivering Services"}
+          stackColor='#0072EF80'
+          arrowColor='#FFFFFF'
+          arrowbgColor='#1362F3'
+          img='/assets/images/handshake.jpg'
+        />
+
+        <ServiceCard
+          title={"Delivering Teams"}
+          stackColor='#FFFFFF80'
+          arrowColor='#00B24F'
+          arrowbgColor='#FFFFFF'
+          img='/assets/images/table.jpg'
+        />
+
+        <ServiceCard
+          title={"Training"}
+          stackColor='#FF8D0380'
+          arrowColor='#FFFFFF'
+          arrowbgColor='#FF8D03'
+          img='/assets/images/plan.jpg'
+        />
+     
       </div>
     </div>
   )

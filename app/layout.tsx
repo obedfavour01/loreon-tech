@@ -23,6 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head><script src='/assets/scripts/loading.js' async /></head>
       <body className={inter.className}>
         <Navbar/>
         {children}

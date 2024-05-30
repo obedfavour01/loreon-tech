@@ -2,7 +2,7 @@
 import Navbar from '@/components/Navbar'
 import React from 'react'
 
-import Story from '../../components/Landing/Story'
+import Story from '../../components/Landing/Mission/Story'
 import Startups from '../../components/Landing/Startups'
 
 import Newsletter from '../../components/Landing/Newsletter'
@@ -16,17 +16,17 @@ import Blog from '@/components/Landing/Blog/Blog'
 const page = () => {
   return (
     <div>
-    
-      <Hero />
-      <Services/>
-      <Story/>
-      <Startups/>
-      <Blog/>
-      <Newsletter/>
-      <Reviews/>
-      <FAQ/>
 
-    </div>  
+      <Hero />
+      <Services />
+      <Story />
+      <Startups />
+      <Blog />
+      <Newsletter />
+      <Reviews />
+      <FAQ />
+
+    </div>
   )
 }
 

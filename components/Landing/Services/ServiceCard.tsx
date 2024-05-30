@@ -1,7 +1,17 @@
 import React, { ReactHTMLElement } from 'react'
 import StackedCards from './StackedCards'
+import { FaArrowRightLong } from 'react-icons/fa6'
 
-const ServiceCard = ({ title }: { title: string }) => {
+
+type ServiceProps = {
+  stackColor: string,
+  title: string,
+  arrowColor: string,
+  arrowbgColor : string
+  img: string
+}
+
+const ServiceCard = ({ title,stackColor,arrowColor,arrowbgColor,img }: ServiceProps) => {
   return (
 
     <div className='mt-7'>
@@ -15,12 +25,22 @@ const ServiceCard = ({ title }: { title: string }) => {
         <div className='bg-[#5C5C5C] w-full h-[.5px]'></div>
 
         <div className="basis-10/12">
-          <StackedCards />
+          <StackedCards stackColor = {stackColor} img = {img}/>
         </div>
 
 
-        <div className='w-20 h-20 flex justify-center absolute items-center bottom-0 right-0 rounded-full z-[999] bg-red-700'>
-          wow
+        <div className='w-16
+               h-16
+               flex 
+               justify-center 
+               absolute 
+               items-center 
+               bottom-0 right-3
+                rounded-full
+                z-[999]'
+                style={{backgroundColor:arrowbgColor}}>
+        <FaArrowRightLong className='-rotate-[45deg]' size={20} color={arrowColor} />
+          
         </div>
       </div>
 

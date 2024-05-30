@@ -10,8 +10,8 @@ const Logo = () => {
               src={"/assets/images/loreonlogo.png"}
               className = "xs:max-lg:w-[100px] w-[150px] h-[36px] object-contain"
               alt='logo'
-              width = {300}
-              height= {100}
+              width = {1000}
+              height= {1000}
               />
         </div>
     </Link>
