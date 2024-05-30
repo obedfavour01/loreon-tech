@@ -12,12 +12,12 @@ const config = {
   theme: {
 
     screens: {
-      xs: "30px",
-      sm: '576px',
-      md: '768px',
-      lg: '992px',
-      xl: '1200px',
-      xxl: '1400px'
+      "xs": "30px",
+     "sm": '576px',
+      "md": '768px',
+      "lg": '992px',
+      "xl": '1200px',
+      "2xl": '1400px'
     },
     container: {
       center: true,
@@ -34,6 +34,7 @@ const config = {
         loreongray: "#393939",
         aboutgray:"#586283",
         aboutgreen: "#4ABA58",
+        datagreen: "#20A84E",
 
 
         border: "hsl(var(--border))",
@@ -101,10 +102,18 @@ const config = {
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(180deg, rgba(74, 186, 88, 0.1) 0%, #4ABA58 100%)',
+        'training-gradient':'linear-gradient(180deg, rgba(65,129,245,1) 0%, rgba(66,129,245,1) 66%, rgba(250,253,255,1) 91%)',
+        'devops-gradient':'linear-gradient(180deg, rgba(19, 98, 243, 0) 0%, #1362F3 100%)',
+        'experience-gradient': 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)',
+        'session-gradient': ' linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)',
+        'data-gradient': 'linear-gradient(180deg, rgba(32, 168, 78, 0) 0%, #20A84E 100%)'
       },
       boxShadow: {
         'custom-shadow': '0px 8px 20px 0px #1211271A',
       },
+      borderColor: {
+          'purpose-border':'linear-gradient(95.49deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 50.64%, #CDCDCD 99.29%)'
+        } 
     
     },
   },

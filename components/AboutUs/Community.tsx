@@ -37,7 +37,10 @@ const Community = () => {
                 <div className="absolute inset-0 bg-custom-gradient"></div>
 
                 <div className='absolute bottom-2 left-2 text-white px-6'>
-                    <p className='text-base font-normal leading-[29px] mb-12'>“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.”</p>
+                    <p className='text-base font-normal leading-[29px] mb-12'>
+                        “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                        Velit officia consequat duis enim velit mollit.”
+                    </p>
 
                     <p className='font-semibold text-xl'>Kristin Watson  /  CEO, Loreon</p>
 

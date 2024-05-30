@@ -6,7 +6,7 @@ import Tags from './Tags'
 
 const Hero = () => {
   return (
-    <div className='mt-20'>
+    <div className='mt-20 xs:max-lg:mt-8'>
       <IntroText />
       <Tags />
       <Gallery />

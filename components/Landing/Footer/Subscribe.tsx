@@ -5,13 +5,13 @@ import React from 'react'
 
 const Subscribe = () => {
   return (
-    <div>
+    <div className='xs:max-lg:w-full xs:max-lg:mt-4'>
 
     <p className='footer_header'>
         Email Address
     </p>
 
-    <div className=' pl-4 rounded-md h-16 w-96 flex items-center border-2 border-[#C0CBF01A] gap-2'>
+    <div className=' pl-4 rounded-md h-16  lg:w-96 flex items-center border-2 border-[#C0CBF01A] gap-2'>
         <Mail className='h-8 w-8 text-white' />
         <Input type="email"
             style={{ outline: "none", border: "none" }}
@@ -31,7 +31,7 @@ const Subscribe = () => {
     </div>
 
 
-    <Button className='w-96 mt-8 text-xs px-3 py-4 text-white text-center bg-bg_blue rounded-3xl'>
+    <Button className='xs:max-lg:w-full  w-96 mt-8 text-xs px-3 py-4 text-white text-center bg-bg_blue rounded-3xl'>
         Subscribe to our Newsletter
     </Button>
 </div>

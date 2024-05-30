@@ -80,7 +80,7 @@
     }
 
     .red{
-     @apply border border-red-500
+     @apply border-2 border-red-500
     }
     .nav__item{
       @apply text-[#9d9d9d] text-sm
@@ -94,11 +94,12 @@
  @apply text-[#FFFFFF] font-semibold  text-sm mb-4
 }
 
-    /* 
-      BlogPost
     
-    */
+/* StackedCards Services */
 
+  .stack__card{
+   @apply absolute rounded-5xl shadow-md h-48 p-4
+  }
     
     /* gradient */
 
