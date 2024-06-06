@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Syne } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Landing/Footer/Footer";
 import Navbar from "@/components/Navbar";
+import { SyneFonts } from "@/lib/fonts";
 
-// const inter = Inter({ subsets: ["latin"] });
 
-const inter = Syne({
-  weight: ["400","500","600","700","800"],
-  subsets:["latin-ext"]}
-)
+
 
 export const metadata: Metadata = {
   title: "Loreon Technologies",
@@ -24,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head><script src='/assets/scripts/loading.js' async /></head>
-      <body className={inter.className}>
+      <body className={SyneFonts.className}>
         <Navbar/>
         {children}
         <Footer/>

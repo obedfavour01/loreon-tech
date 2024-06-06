@@ -101,6 +101,13 @@
    @apply absolute rounded-5xl shadow-md h-48 p-4
   }
     
+  .first__stack{
+      width: calc(100% - 35px);
+  }
+
+  .second__stack{
+    width: calc(100% - 87px);
+}
     /* gradient */
 
     .community-gradient{

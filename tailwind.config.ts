@@ -106,15 +106,19 @@ const config = {
         'devops-gradient':'linear-gradient(180deg, rgba(19, 98, 243, 0) 0%, #1362F3 100%)',
         'experience-gradient': 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)',
         'session-gradient': ' linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)',
-        'data-gradient': 'linear-gradient(180deg, rgba(32, 168, 78, 0) 0%, #20A84E 100%)'
+        'data-gradient': 'linear-gradient(180deg, rgba(32, 168, 78, 0) 0%, #20A84E 100%)',
+        'blog-gradient': ' linear-gradient(184.16deg, rgba(0, 0, 0, 0) 16.94%, rgba(0, 0, 0, 0.7) 78.01%)'
       },
       boxShadow: {
         'custom-shadow': '0px 8px 20px 0px #1211271A',
       },
       borderColor: {
           'purpose-border':'linear-gradient(95.49deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 50.64%, #CDCDCD 99.29%)'
-        } 
-    
+        },
+
+      width: {
+        
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

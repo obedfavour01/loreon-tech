@@ -14,8 +14,6 @@ const AcademyVideo = () => {
         // picture in picture
         pip={true}
         
-        
-
         />
   )
 }

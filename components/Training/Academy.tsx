@@ -14,7 +14,14 @@ const Academy = () => {
                 </h1>
 
                 <p className='text-center  w-3/4  mx-auto font-medium text-base my-8'>
-                    Built in partnership with the Linux Foundation, the Loreon Academy training and certification program is the vendor-neutral leading source for demonstrating your competence in cloud computing.  Learn from the pioneer of cloud technology.  Curriculum written and designed by experts built directly for the exams.  The only authoritative source for cloud certification accepted by industry.
+                    Built in partnership with the Linux Foundation, 
+                    the Loreon Academy training and certification program 
+                    is the vendor-neutral leading source for demonstrating 
+                    your competence in cloud computing.  
+                    Learn from the pioneer of cloud technology.  
+                    Curriculum written and designed by experts built directly
+                    for the exams.  The only authoritative source
+                    for cloud certification accepted by industry.
                 </p>
             </div>
             <div className=' w-max rounded-2xl my-8 overflow-hidden mx-auto'>

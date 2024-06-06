@@ -4,10 +4,10 @@ import React from 'react'
 const StackedCards = ({stackColor,img}:{stackColor:string,img:string}) => {
   return (
    <div className=" relative flex justify-center w-full h-full mt-6  overflow-hidden ">
-      <div className="stack__card w-[320px]  top-4" style={{backgroundColor: stackColor}}>
+      <div className="stack__card second__stack  top-4" style={{backgroundColor: stackColor}}>
       
       </div>
-      <div className="stack__card mx-auto w-[360px]  top-8" style={{backgroundColor: stackColor}}>
+      <div className="stack__card mx-auto first__stack  top-8" style={{backgroundColor: stackColor}}>
         
       </div>
       <div className="absolute bg-white overflow-hidden rounded-5xl shadow-md w-full h-48 top-12">

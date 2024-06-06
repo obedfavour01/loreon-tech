@@ -10,7 +10,9 @@ const Story = () => {
     return (
         <section className='
             flex
+            xs:max-lg:flex-col
             mx-auto
+            
             gap-24
             w-max
             
