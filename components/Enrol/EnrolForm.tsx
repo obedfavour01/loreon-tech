@@ -246,7 +246,7 @@ const EnrolForm = () => {
                 </div>
 
                 
-                <div>
+                <div className="ml-auto w-max">
                     <Image
                         width={800}
                         height={300}

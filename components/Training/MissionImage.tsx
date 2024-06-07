@@ -6,7 +6,7 @@ const MissionImage = () => {
   return (
     <div className='basis-5/12'>
         <Image
-        src={"/assets/images/newPeople.png"}
+        src={"/assets/images/newPeople.PNG"}
         alt='diverse'
         width={1000}
         height={480}

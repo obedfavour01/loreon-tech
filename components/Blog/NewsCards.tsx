@@ -30,7 +30,7 @@ const NewsCards = () => {
         <div className='flex gap-6 mt-6 items-center'>
           <div className='flex rounded-full w-12 h-12'>
             <Image
-              src={"/assets/images/model.png"}
+              src={"/assets/images/model.PNG"}
               width={48}
               height={48}
               alt='avatar'
