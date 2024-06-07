@@ -3,7 +3,7 @@ import React from 'react'
 
 const Events = () => {
   return (
-    <section className='mx-20 my-8'>
+    <section className='mx-20 my-36'>
       <header className='flex justify-between items-center my-8'>
         <h1 className='text-4xl font-bold'>Our amazing events & members</h1>
 
@@ -14,7 +14,7 @@ const Events = () => {
  
 
         <div className='grid grid-cols-12 grid-rows-5 gap-6 h-[500px]'>
-          <div className="red h-50 col-span-5 row-span-5">
+          <div className=" h-50 col-span-5 row-span-5">
             <Image
               src={"/assets/images/design.jpg"}
               width={531}
@@ -22,12 +22,12 @@ const Events = () => {
               alt='design'
               className='aspect-square object-cover h-full w-full rounded-2xl' />
           </div>
-          <div className="red h-50 col-span-4 row-span-2">
+          <div className=" h-50 col-span-4 row-span-2 bg-gray-300 rounded-3xl">
 
 
           </div>
-          <div className="red h-50 col-span-3 row-span-2">yo  </div>
-          <div className="red h-50 row-span-3 col-span-7">
+          <div className=" h-50 col-span-3 row-span-2 bg-gray-300 rounded-3xl">  </div>
+          <div className=" h-50 row-span-3 col-span-7">
             <Image
               src={"/assets/images/build.jpg"}
               width={500}

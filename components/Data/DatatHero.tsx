@@ -11,10 +11,11 @@ const DatatHero = () => {
                 width={1800}
                 height={1800}
                 alt='devops'
+                loading='lazy'
                 className='w-full object-cover block'
             />
 
-            <div className="absolute inset-0 bg-data-gradient"></div>
+            <div className="absolute inset-0 bg-data-gradient"></div>  
 
             <div className='absolute bottom-20 w-full text-center'>
                 

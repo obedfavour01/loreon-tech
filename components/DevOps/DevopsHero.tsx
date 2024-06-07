@@ -11,8 +11,9 @@ const DevopsHero = () => {
                 src={"/assets/images/devopsmain.jpg"}
                 width={1800}
                 height={1800}
+                loading='lazy'
                 alt='devops'
-                className='w-full object-cover block'
+                className='w-full object-cover block bg-fixed'
             />
 
             <div className="absolute inset-0 bg-devops-gradient"></div>

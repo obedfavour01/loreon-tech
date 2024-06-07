@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
 import { FaLongArrowAltRight } from "react-icons/fa";
 
@@ -42,9 +43,11 @@ const Roles = () => {
               applications and hands-on experience.
             </p>
 
+        <Link href={"/training/devops"}>
             <h6 className='text-loreonblue flex gap-2 items-center'>
               Pricing Details <FaLongArrowAltRight />
             </h6>
+        </Link>
           </div>
 
 
@@ -67,11 +70,12 @@ const Roles = () => {
               data technologies like Hadoop and Spark,  
              .
             </p>
-
-            <h6 className='text-loreonblue flex gap-2 items-center'>
-              Go there 
+            <Link href={"/training/data"}>
+              <h6 className='text-loreonblue flex gap-2 items-center'>
+               Go there 
               <FaLongArrowAltRight />
             </h6>
+            </Link>
           </div>
         </div>
       </div>

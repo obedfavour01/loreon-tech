@@ -16,7 +16,7 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between items-center px-20 pt-9 xs:max-lg:px-2 xs:max-lg:pt-1'>
+    <nav className='flex justify-between items-center px-20 pt-9 xs:max-lg:px-6 xs:max-lg:mt-4 ' title='Go to Home'>
       <Logo />
 
       <MobileSidebar />
@@ -28,18 +28,20 @@ const Navbar = () => {
             <NavItem text="Training" href='/training' />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuLabel>Courses</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <Link href= {"/training/data"}>
-              <DropdownMenuItem>Data</DropdownMenuItem>
+            <Link href={"/training"}>
+              <DropdownMenuLabel>Overview</DropdownMenuLabel>
 
             </Link>
+            <DropdownMenuSeparator />
+            <Link href={"/training/data"}>
+              <DropdownMenuItem>Data</DropdownMenuItem>
+            </Link>
 
-            <Link href= {"/training/devops"}>
+            <Link href={"/training/devops"}>
               <DropdownMenuItem>Devops</DropdownMenuItem>
 
             </Link>
-          
+
             <DropdownMenuItem>Sysops</DropdownMenuItem>
 
           </DropdownMenuContent>
@@ -47,7 +49,7 @@ const Navbar = () => {
 
 
         <NavItem text="Community" href='/about-us' />
-        <NavItem text="Blogs & News" href='/about-us' />
+        <NavItem text="Blogs & News" href='/blog' />
 
         <Button className='bg-bg_blue text-white rounded-xl'> Get started</Button>
       </div>
