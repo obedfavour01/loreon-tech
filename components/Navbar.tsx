@@ -49,11 +49,19 @@ const Navbar = () => {
 
 
         <NavItem text="Community" href='/about-us' />
-        <NavItem text="Blogs & News" href='/blog' />
+       
+       
+
+        <NavItem text="Blogs & News" href='/blog'/>
+     
+
+  
+        <NavItem text="Contact Us" href='/contact-us'/>
+     
 
         <Button className='bg-bg_blue text-white rounded-xl'> Get started</Button>
-      </div>
-    </nav>
+      </div >
+    </nav >
   )
 }
 

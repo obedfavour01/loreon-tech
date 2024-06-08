@@ -3,7 +3,11 @@ import { Button } from '../../ui/button'
 
 const Stat = () => {
   return (
-    <div className='lg:mx-36 my-9 flex justify-between items-center'>
+    <div className='lg:mx-36 my-9
+    xs:max-lg:mx-7
+    xs:max-lg:justify-center
+    xs:max-lg:gap-3
+     flex xs:max-lg:flex-wrap justify-between items-center'>
 
       <div className='flex gap-6'>
         <div className='flex flex-col gap-2 items-center justify-center'>
@@ -18,12 +22,12 @@ const Stat = () => {
       </div>
 
 
-      <div>
+      <div className=''>
         <Button className='bg-bg_blue text-white'>Reach out</Button>
       </div>
 
-      <div className='basis-1/3'>
-        <p className='text-2xl'>
+      <div className='lg:basis-1/3  xs:max-lg:w-full '>
+        <p className='text-2xl  xs:max-lg:text-xl text-center'>
           Our services are designed to help you know more, and do more, so you can be more.
         </p>
       </div>

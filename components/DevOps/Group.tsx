@@ -7,7 +7,7 @@ const Group = ({type}:{type:string}) => {
   return (
     <div className={`h-[680px] 
             relative 
-           ${type == "Devops" ?' bg-bg_blue': 'bg-datagreen'}  rounded-6xl overflow-hidden basis-1/2 `}>
+           ${type == "Devops" ?' bg-bg_blue': 'bg-datagreen'}  rounded-6xl lg:overflow-hidden basis-1/2 `}>
             <Image
                 src={`${type == "Devops"? '/assets/images/vector1.png' :'/assets/images/vectogreen.png'}`}
                 width={1000}
@@ -22,7 +22,8 @@ const Group = ({type}:{type:string}) => {
                 height={1800}
                 alt='devops'
                 className=' w-max h-max block absolute right-0 bottom-0 rotate '
-            /><div className='flex 
+            />
+            <div className='flex 
             flex-col 
             justify-between
             items-center 

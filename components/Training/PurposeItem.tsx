@@ -9,18 +9,18 @@ import Image from 'next/image'
 
 const PurposeItem = ({PurposeTitle,PurposeDetails,className}:purpose) => {
   return (
-    <div className={`flex  gap-4 ${className}` }>
-        <div className='w-20 h-[80px]'>  
+    <div className={`flex  gap-4 xs:max-lg:gap-2 ${className}` }>
+        <div className='w-20 h-[80px] xs:max-lg:basis-2/12 basis-1/12'>  
             <Image src = {"/assets/icons/purpose.svg"}
                 alt = "pillar"
                 width = {400}
-                height = {200}
-                className = "w-full h-full "
+                height = {400}
+                className = "w-20 h-[80px]"
             />
         </div>
-        <div>
-            <h2 className='font-bold text-2xl text-white'>{PurposeTitle}</h2>
-            <p className='text-white font-normal text-lg'>{PurposeDetails}</p>
+        <div className=' xs:max-lg:basis-10/12 basis-11/12'>
+            <h2 className='font-bold text-2xl text-white xs:max-lg:text-base '>{PurposeTitle}</h2>
+            <p className='text-white font-normal text-lg xs:max-lg:text-xs'>{PurposeDetails}</p>
         </div>
     </div>
   )}

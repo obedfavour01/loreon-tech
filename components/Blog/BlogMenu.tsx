@@ -4,7 +4,7 @@ import BlogSideCards from './BlogSideCards'
 
 const BlogMenu = () => {
   return (
-    <section className='flex h-max my-12'>
+    <section className='flex h-screen my-12'>
         <div className='basis-1/2 relative'>
             <Image
                 src={"/assets/images/blogmain.jpg"}
@@ -15,7 +15,7 @@ const BlogMenu = () => {
 
             <div className="absolute inset-0 bg-blog-gradient"></div>
 
-            <div className='text-white absolute bottom-8 mx-28 space-y-8'>
+            <div className='text-white absolute bottom-8 mx-28 space-y-6'>
                 <small className='text-base font-bold'>#design</small>
                 <h1 className="text-3xl font-bold ">
                     A designer’s guide to writing effective copy 
@@ -28,7 +28,9 @@ const BlogMenu = () => {
                     content-creation skills a designer can possess. 
                     If you think about it, design exists to support 
                     and deliver content—not the other way around.
+                </p>
 
+                <p>
                     As a designer, content should be the driving 
                     force behind many of your decisions,
                     whether you’re creating the content or someone else is.
@@ -37,6 +39,8 @@ const BlogMenu = () => {
                     you’ll be able to better serve your clients 
                     and ultimately create better designs.
 
+                </p>
+                <p>
                 In this article, we’ll cover some helpful copywriting
                  tips for designers to help you build better experiences.
                 </p>
@@ -44,7 +48,7 @@ const BlogMenu = () => {
                 <small className='text-loreonblue text-base font-bold'>Read More</small>
             </div>
         </div>
-        <div className='basis-1/2 space-y-8'>
+        <div className='basis-1/2 flex flex-col gap-8 '>
             <BlogSideCards/>
             <BlogSideCards/>
             <BlogSideCards/>

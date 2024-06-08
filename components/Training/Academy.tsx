@@ -6,14 +6,14 @@ import AcademyVideo from './AcademyVideo';
 
 const Academy = () => {
     return (
-        <div className='mx-36'>
+        <div className='mx-36 md:max-lg:mx-16 xs:max-md:mx-7'>
 
-            <div>
-                <h1 className='text-5xl w-1/2 mx-auto text-center font-bold'>
+            <div className=''>
+                <h1 className='text-5xl xs:max-md:text-3xl w-1/2 xs:max-md:w-full mx-auto text-center font-bold'>
                     Become an expert with <span className='text-loreonblue'>Loreon</span> Academy
                 </h1>
 
-                <p className='text-center  w-3/4  mx-auto font-medium text-base my-8'>
+                <p className='text-center  w-3/4 xs:max-md:w-full  mx-auto font-medium text-base my-8'>
                     Built in partnership with the Linux Foundation, 
                     the Loreon Academy training and certification program 
                     is the vendor-neutral leading source for demonstrating 
@@ -24,12 +24,12 @@ const Academy = () => {
                     for cloud certification accepted by industry.
                 </p>
             </div>
-            <div className=' w-max rounded-2xl my-8 overflow-hidden mx-auto'>
+            <div className='lg:w-[766px] lg:h-[429px]  xs:max-md:w-[296px]   rounded-2xl my-8  mx-auto'>
                 <AcademyVideo/>
             </div>
 
 
-            <div className='flex justify-between gap-12 my-8'>
+            <div className='flex xs:max-lg:flex-col justify-between  gap-12 xs:max-lg:gap-y-8 my-16'>
                 <div className='flex gap-3 '>
                     <TbSettingsCode size={90} className='h-max' />
                     <div>
@@ -44,7 +44,7 @@ const Academy = () => {
                 </div>
 
                 <div className='flex gap-3 '>
-                    <TbCloudCode size={90} className='h-max' />
+                    <TbCloudCode size={70} className='h-max' />
                     <div>
                         <h1 className='text-lg font-bold'>Validate your skills through certifications</h1>
 
@@ -54,12 +54,12 @@ const Academy = () => {
                         </p>
                     </div>
                 </div>
-                <div className='flex gap-3 items-start'>
+                <div className='flex gap-2 items-start'>
                     <Image src={"/assets/icons/examine.svg"}
-                        width={80}
-                        height={100}
+                        width={70}
+                        height={70}
                         alt='icon'
-                        className='h-max'
+                        className=' w-8 h-8'
                     />
                     <div>
                         <h1 className='text-lg font-bold m-0'>

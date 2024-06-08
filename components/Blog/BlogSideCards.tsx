@@ -4,7 +4,7 @@ import { Button } from '../ui/button'
 
 const BlogSideCards = () => {
     return (
-        <div className='mx-10'>
+        <div className='mx-10 '>
 
             <div className='flex gap-8'>
                     <Image
@@ -12,7 +12,7 @@ const BlogSideCards = () => {
                         width={800}
                         height={800}
                         alt='blog'
-                        className='h-[150px] w-[280px] rounded-2xl' 
+                        className='h-[124px] w-[240px] rounded-2xl' 
                     />
 
                 

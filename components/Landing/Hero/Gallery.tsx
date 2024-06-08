@@ -3,7 +3,11 @@ import Image from "next/image"
 
 const Gallery = () => {
   return (
-    <div className="mx-32 mt-16 flex items-center justify-center h-[500px] gap-6">
+    <div className="mx-32 
+    mt-16 flex 
+    xs:max-lg:overflow-hidden
+    items-center 
+    justify-center h-[500px] gap-6">
 
       <div className="">
         <Image alt="first"
