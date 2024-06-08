@@ -4,7 +4,7 @@ import Certification from './Certification'
 
 const RoleCertification = () => {
   return (
-    <div className='h-[100vh] px-40 mt-60 mb-24 bg-white'>
+    <div className='px-40  xs:max-lg:px-6 mt-60  mb-24 bg-white'>
             <Roles/>
             <Certification/>
     </div>

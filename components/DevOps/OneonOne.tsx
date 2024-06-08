@@ -5,13 +5,13 @@ import { IoIosArrowDropright } from 'react-icons/io'
 
 const OneonOne = () => {
     return (
-        <div className='h-[680px] relative rounded-6xl overflow-hidden basis-1/2 '>
+        <div className='lg:h-[680px]  w-full relative rounded-6xl overflow-hidden basis-1/2 '>
             <Image
                 src={"/assets/images/devopsexperience.jpg"}
                 width={1800}
                 height={1800}
                 alt='devops'
-                className='w-full h-full object-cover block'
+                className='w-full h-full  object-cover block'
             />
 
             <div className="absolute inset-0 bg-session-gradient"></div>
@@ -32,7 +32,7 @@ const OneonOne = () => {
 
 
 
-                <div className='w-3/5 text-center'>
+                <div className='w-3/5 xs:max-lg:w-full text-center'>
                     <h1 className='text-6xl text-center font-bold '>One - On - One Session</h1>
                     <p className='my-4'>Individualised Training</p>
                     <div className='border border-loreonblue w-48 mx-auto rounded-5xl p-3'>

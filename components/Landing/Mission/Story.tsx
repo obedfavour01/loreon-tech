@@ -11,14 +11,17 @@ const Story = () => {
         <section className='
             flex
             xs:max-lg:flex-col
+            xs:max-lg:itens-center
+            xs:max-lg:mx-7
             mx-auto
             
             gap-24
             w-max
-            
+            xs:max-lg:w-screen
             mt-20 mb-32 
              justify-center'>
-            <div className=' w-max'>
+           
+            <div className=' max-w-max mx-auto  xs:max-lg:'>
                 <VisionCards />
                 <MissionCards />
             </div>

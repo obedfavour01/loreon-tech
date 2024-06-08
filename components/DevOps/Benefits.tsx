@@ -11,12 +11,17 @@ const dataGreen = '#20A84E'
 
 const Benefits = ({type}:{type:string}) => {
     return (
-        <section className='mx-24 my-20'>
+        <section className='mx-24 my-20 xs:max-lg:mx-6'>
             <header className='text-3xl font-bold my-7'>Benefits</header>
 
-            <div className='flex justify-between gap-8'>
+            <div className='flex xs:max-lg:flex-col justify-between gap-8'>
 
-                <div className='h-[400px] w-[576px] overflow-hidden relative rounded-3xl'>
+                <div className='h-[400px] 
+                    w-[576px] 
+                    xs:max-lg:w-full
+                    xs:max-lg:h-[260px] 
+                    overflow-hidden 
+                    relative rounded-3xl'>
                     <Image
                         src={"/assets/images/devopsexperience.jpg"}
                         width={1800}
@@ -54,7 +59,7 @@ const Benefits = ({type}:{type:string}) => {
                     </div>
                 </div>
                 <div>
-                    <div className='flex gap-6'>
+                    <div className='flex gap-6 xs:max-lg:gap-2'>
                         <Cards bgColor='#fff' 
                         textColor= {type == "Devops"? devopsBlue: dataGreen} text='Comprehensive Classes and Practicals' />
                         <Cards 

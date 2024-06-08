@@ -5,23 +5,30 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Roles = () => {
   return (
-    <div>
-      <h1 className='text-5xl font-bold text-center'>Role Based Training</h1>
+    <div className=''>
+      <h1 className='text-5xl xs:max-lg:text-3xl font-bold text-center'>Role Based Training</h1>
 
-      <div className='flex '>
-        <div className='basis-1/2 py-16 pr-28'>
-          <h1 className='text-2xl font-bold'>
+      <div className='flex  xs:max-lg:flex-col xs:max-lg:gap-y-8'>
+        <div className='lg:basis-1/2  
+            xs:max-lg:w-full 
+             
+            py-16 
+            xs:max-lg:pr-4
+            xs:max-lg:py-6
+            pr-28'>
+          <h1 className='text-2xl  font-bold'>
             Ready to get started?
           </h1>
 
-          <p className='whitespace-pre-wrap text-lg mt-10  text-loreongray'>
+          <p className='whitespace-pre-wrap
+           text-lg mt-10 xs:max-lg:mt-4 text-loreongray'>
             Explore our role based trainings,
             submit an application and start your journey
             to being a Certified DevOps Engineer or Data Analyst.
             You can also contact us if you need any help in your
             application.</p>
         </div>
-        <div className='flex  gap-10 basis-1/2'>
+        <div className='flex  gap-10 xs:max-lg:gap-14 basis-1/2'>
           <div>
             <Image src={"/assets/icons/delivery.png"}
               width={700}

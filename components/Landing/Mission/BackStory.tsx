@@ -3,20 +3,20 @@ import { Button } from '../../ui/button'
 
 const BackStory = () => {
     return (
-        <div className='w-max'>
-            <p className='text-loreonblue text-sm font-semibold    '>
+        <div className='w-max xs:max-lg:w-screen '>
+            <p className='text-loreonblue text-sm font-semibold'>
                 Breaking business barriers
             </p>
             <h1 className="font-extrabold 
                 text-6xl 
                 
                 w-max
-                xs:max-lg:text-4xl
+                xs:max-lg:text-3xl
                 leading-[63px]
                 text-[#343434]"
             >
                 Loreon <br/> Backstory</h1>
-            <p className='my-4 text-base   max-w-96'>
+            <p className='my-4 text-base   lg:max-w-96'>
                 Lorem ipsum dolor sit amet consectetur
                 adipiscing elit Ut et massa mi.
                 Aliquam in hendrerit urna.
