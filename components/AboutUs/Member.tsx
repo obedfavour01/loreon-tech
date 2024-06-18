@@ -12,11 +12,11 @@ const Member = ({name,role}:Member) => {
                 width={200}
                 height={200}
                 alt='model'
-                className='w-20 h-20 rounded-full '/>
+                className='w-20 h-20 xs:max-lg:w-14 xs:max-lg:h-14 rounded-full '/>
 
-            <div>
-                <h2 className='text-[#121127] text-base font-bold'>{name}</h2>
-                <h3 className='text-loreonblue text-sm font-medium'>{role}</h3>
+            <div className=''>
+                <h2 className='text-[#121127] text-base xs:max-md:text-xs font-bold'>{name}</h2>
+                <h3 className='text-loreonblue text-sm xs:max-md:text-xs font-medium'>{role}</h3>
             </div>
     </div>
   )

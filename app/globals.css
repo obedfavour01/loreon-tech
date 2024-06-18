@@ -1,6 +1,9 @@
+
+
+
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
 
     *{
@@ -70,10 +73,55 @@
       --ring: 212.7 26.8% 83.9%;
     }
   }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.data-learning-border{
+    border: 1.41px solid ;
+    border-image-source: linear-gradient(124.03deg, #20A84E -5.17%, #FFFFFF 86.42%);
+}
+
+.devops-learning-border{
+  position: relative;
+  padding: 2px; 
+  border-radius: 12px;
+  background: linear-gradient(124.03deg, #1362F3 22.31%, #FFFFFF 86.42%);
+}
+
+.devops-learning-border > .content {
+  background-color: #051D49; /* Background color of the inner content */
+  border-radius: 10px; /* Should be slightly less than the outer radius */
+  padding: 16px; /* Adjust padding as needed */
+  position: relative;
+  z-index: 1;
+}
+
+.devops-learning-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 1.41px; /* Adjust this value to match your border width */
+  background: linear-gradient(124.03deg, #1362F3 22.31%,  86.42%);;
+  -webkit-mask: 
+     linear-gradient(transparent 0 0) content-box, 
+     linear-gradient(transparent 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
+
 
   @layer base {
     * {
-      @apply border-border;
+      @apply border-border ;
     }
     body {
       @apply bg-background text-foreground;

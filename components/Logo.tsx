@@ -5,7 +5,7 @@ import React from 'react'
 const Logo = () => {
   return (
     <Link href={'/'}>
-        <div>
+        <div title='Go to Home'>
             <Image
               src={"/assets/images/loreonlogo.png"}
               className = "xs:max-lg:w-[100px] w-[150px] h-[36px] object-contain"

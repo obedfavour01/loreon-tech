@@ -8,7 +8,7 @@ const ImagesData = [
 ]
 const Startups = () => {
     return (
-        <section className='mx-32 xs:max-lg:mx-4'>
+        <section className='mx-32 xs:max-md:mx-6'>
             <div className='flex xs:max-lg:flex-col justify-between gap-36'>
                 <div className='basis-1/2'>
                     <header className='text-4xl font-bold'>We support early stage
@@ -44,14 +44,17 @@ const Startups = () => {
 
 
 
-            <div className='my-24 px-10'>
+            <div className='my-24 px-10 xs:max-lg:px-2 '>
                 <div className='flex  flex-wrap xs:max-lg:flex-wrap gap-12 my-12 justify-center'>
                     {
                         ImagesData.map((img,ind) => (
 
+                    
                             <Image 
                             key={ind}
-                            src={`/assets/images/${img}`} alt="logo" width={800} height={800} className='object-contain w-16 h-16' />
+                            src={`/assets/images/${img}`} 
+                            alt="logo" 
+                            width={800} height={800} className='object-contain w-16 h-16' />
                         ))
                     }
                    

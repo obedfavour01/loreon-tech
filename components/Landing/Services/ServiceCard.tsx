@@ -14,19 +14,18 @@ type ServiceProps = {
 const ServiceCard = ({ title,stackColor,arrowColor,arrowbgColor,img }: ServiceProps) => {
   return (
 
-    <div className='mt-7'>
-
-      <div className='flex flex-col h-80  rounded-5xl bg-[#2F2F2F] relative'>
+    <div className='mt-7  lg:basis-1/3 xs:max-lg:min-w-[404px] max-w-[404px]'>
+      <div className='flex flex-col min-w-max h-80  rounded-5xl bg-[#2F2F2F] relative'>
 
         <div className="basis-2/12">
           <h1 className='font-semibold text-2xl text-white px-4 py-4'>{title}</h1>
-        </div>
+        </div>    
 
         <div className='bg-[#5C5C5C] w-full h-[.5px]'></div>
 
         <div className="basis-10/12">
           <StackedCards stackColor = {stackColor} img = {img}/>
-        </div>
+        </div>  
 
 
         <div className='w-16

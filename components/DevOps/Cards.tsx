@@ -13,8 +13,10 @@ const Cards = ({bgColor,textColor,text}:CardsProps) => {
         <div className='w-1/2 xs:max-lg:w-full 
             flex flex-col 
             justify-between  
-            h-[220px] 
+            max-h-[220px] 
+            xs:max-lg:h-32
             rounded-6xl
+            xs:max-lg:rounded-xl
             xs:max-lg:px-3
              px-5 py-4 border-2'
             style={{backgroundColor: `${bgColor}`, color: textColor,borderColor:textColor}}>
@@ -25,7 +27,7 @@ const Cards = ({bgColor,textColor,text}:CardsProps) => {
                 color={textColor}
             />
 
-            <h1 className='font-bold text-2xl xs:max-lg:text-base' style={{color: textColor}}>{text}</h1>
+            <h1 className='font-bold text-2xl xs:max-lg:text-sm' style={{color: textColor}}>{text}</h1>
 
             <div className='
                             flex 

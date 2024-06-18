@@ -3,10 +3,11 @@ import ServiceCard from '../../../components/Landing/Services/ServiceCard'
 
 const Services = () => {
   return (
-    <div className=' xs:max-lg:mx-4 lg:mx-6
+    <div className=' xs:max-lg:mx-6 lg:mx-6
          bg-black 
          rounded-3xl 
          px-24 
+         
          xs:max-lg:px-6
          py-16'>
       <div className='flex justify-between'>
@@ -18,7 +19,7 @@ const Services = () => {
       <div className='bg-[#5C5C5C] w-full h-[.5px]'></div>
 
 
-      <div className='flex xs:max-lg:flex-col gap-8 justify-center'>
+      <div className='flex xs:max-lg:overflow-x-scroll  gap-8 justify-center '>
         <ServiceCard
           title={"Delivering Services"}
           stackColor='#0072EF80'
@@ -42,6 +43,7 @@ const Services = () => {
           arrowbgColor='#FF8D03'
           img='/assets/images/plan.jpg'
         />
+        
      
       </div>
     </div>

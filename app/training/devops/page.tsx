@@ -1,16 +1,18 @@
 import Benefits from '@/components/DevOps/Benefits'
 import DevopsHero from '@/components/DevOps/DevopsHero'
+import DevopsLearn from '@/components/DevOps/DevopsLearn'
+import LearningModules from '@/components/DevOps/LearningModules'
 import Ready from '@/components/DevOps/Ready'
 import Sessions from '@/components/DevOps/Sessions'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div className=' overflow-hidden'>
       <DevopsHero/>
-      <Benefits type={"Devops"}/>
+      <DevopsLearn/>
+      <LearningModules/>
       <Sessions type='Devops'/>
-      <Ready/>
     </div>
   )
 }

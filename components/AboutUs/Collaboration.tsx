@@ -7,8 +7,8 @@ import { Button } from '../ui/button'
 
 const Collaboration = () => {
     return (
-        <section className='mx-20'>
-            <div className='flex gap-6 items-center'>
+        <section className='mx-20 xs:max-lg:mx-7'>
+            <div className='flex xs:max-lg:flex-col gap-6 items-center'>
                 <div className='lg:basis-4/12'>
                     <h1 className="text-aboutgray font-semibold text-5xl  leading-[56px]">
                         About Loreon
@@ -54,7 +54,7 @@ const Collaboration = () => {
                 </div>
             </div>
 
-            <div className='flex gap-5 my-6'>
+            <div className='flex xs:max-md:flex-col gap-5 my-6'>
                 <div className='py-4 px-6 rounded-lg flex bg-bg_about_gray basis-1/2 gap-4'>
 
                 <Image alt='' width={200} height={300} src={"/assets/images/docker.svg"}  className='w-24'/>

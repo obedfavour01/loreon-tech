@@ -3,15 +3,15 @@ import React from 'react'
 import { Button } from '../ui/button'
 import { IoIosArrowDropright } from 'react-icons/io'
 
-const OneonOne = () => {
+const OneonOne = ({ type }: { type: string }) => {
     return (
-        <div className='lg:h-[680px]  w-full relative rounded-6xl overflow-hidden basis-1/2 '>
+        <div className='h-[680px] xs:max-lg:h-[480px]  w-full relative shadow-md overflow-hidden rounded-6xl lg:basis-1/2 '>
             <Image
                 src={"/assets/images/devopsexperience.jpg"}
                 width={1800}
                 height={1800}
                 alt='devops'
-                className='w-full h-full  object-cover block'
+                className='w-full h-full  object-cover '
             />
 
             <div className="absolute inset-0 bg-session-gradient"></div>
@@ -33,13 +33,24 @@ const OneonOne = () => {
 
 
                 <div className='w-3/5 xs:max-lg:w-full text-center'>
-                    <h1 className='text-6xl text-center font-bold '>One - On - One Session</h1>
+                    <h1 className='text-6xl xs:max-lg:text-3xl text-center font-bold '>One - On - One Session</h1>
                     <p className='my-4'>Individualised Training</p>
                     <div className='border border-loreonblue w-48 mx-auto rounded-5xl p-3'>
                         <p className='text-loreonblue text-2xl font-bold'>$400
                             <span className='text-xs'>/Session</span>
                         </p>
                     </div>
+
+                    <p className=
+                        {` 'text-black'
+                            mt-4 
+                            w-1/2 mx-auto
+                            
+                        `}
+                    >
+                        Duration: Mon, Wed, Fri.
+                        10:00am - 12:00pm
+                    </p>
                 </div>
 
                 <Button className='text-black
@@ -53,8 +64,8 @@ const OneonOne = () => {
                     Apply now
 
                     <div className=' p-2 rounded-full bg-black'>
-                        
-                    <IoIosArrowDropright className='text-white' size={12}/>
+
+                        <IoIosArrowDropright className='text-white' size={12} />
                     </div>
                 </Button>
 
