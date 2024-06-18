@@ -102,7 +102,7 @@ const config = {
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(180deg, rgba(74, 186, 88, 0.1) 0%, #4ABA58 100%)',
-        'training-gradient':'linear-gradient(180deg, rgba(65,129,245,1) 0%, rgba(66,129,245,1) 66%, rgba(250,253,255,1) 91%)',
+        'training-gradient':'linear-gradient(180deg, rgba(65,129,245,1) 0%, rgba(66,129,245,1) 73%, rgba(250,253,255,1) 99%)',
         'devops-gradient':'linear-gradient(180deg, rgba(19, 98, 243, 0) 0%, #1362F3 100%)',
         'experience-gradient': 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)',
         'session-gradient': ' linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)',
@@ -115,6 +115,8 @@ const config = {
       borderColor: {
           'purpose-border':'linear-gradient(95.49deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 50.64%, #CDCDCD 99.29%)'
         },
+
+      
 
       width: {
         

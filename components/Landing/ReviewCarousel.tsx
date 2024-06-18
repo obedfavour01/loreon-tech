@@ -16,13 +16,13 @@ import { Rating } from './Reviews'
 
 const ReviewCarousel = () => {
   return (
-    <div className='xs:max-md:ml-4 lg:ml-40  xs:max-lg:ml-12 mt-6 '>
+    <div className=' mt-6 '>
                 <Carousel className="w-full">
                     <CarouselContent className="-ml-1">
                         {Array.from({ length: 5 }).map((_, index) => (
-                            <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
-                                <div className="p-3">
-                                    <Card className='h-max'>
+                            <CarouselItem key={index} className="pl-1 shadow-lg md:basis-1/2  lg:basis-1/2">
+                                
+                                    <Card className='h-max  mr-6 '>
                                         <CardContent className="px-9 py-10">
                                             <p className='text-[#1211278F] '>Amet minim mollit non deserunt 
                                                 ullamco est sit aliqua dolor do amet 
@@ -55,11 +55,11 @@ const ReviewCarousel = () => {
                                             
                                         </CardContent>
                                     </Card>
-                                </div>
+                              
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <div className=' flex justify-center items-center -translate-x-16 mt-8 gap-8'>
+                    <div className=' flex justify-between items-center mx-2  mt-8 gap-8'>
 
                         <CarouselPrevious className='static w-12 bg-[#239DE0] ' />
                         <CarouselNext className={`static w-12  bg-[#239DE0]`} />

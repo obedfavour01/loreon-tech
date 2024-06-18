@@ -3,43 +3,67 @@ import React from 'react'
 
 const Events = () => {
   return (
-    <section className='mx-20 my-36'>
+    <section className='mx-20 xs:max-lg:mx-6 my-36'>
       <header className='flex justify-between items-center my-8'>
-        <h1 className='text-4xl font-bold'>Our amazing events & members</h1>
+        <h1 className='text-4xl xs:max-lg:text-xl font-bold'>Our amazing events & members</h1>
 
-        <h3 className='text-base font-bold'>SEE MORE</h3>
+        <h3 className='text-base xs:max-lg:text-xs font-bold'>SEE MORE</h3>
       </header>
 
 
- 
-
-        <div className='grid grid-cols-12 grid-rows-5 gap-6 h-[500px]'>
-          <div className=" h-50 col-span-5 row-span-5">
-            <Image
-              src={"/assets/images/design.jpg"}
-              width={531}
-              height={531}
-              alt='design'
-              className='aspect-square object-cover h-full w-full rounded-2xl' />
-          </div>
-          <div className=" h-50 col-span-4 row-span-2 bg-gray-300 rounded-3xl">
 
 
-          </div>
-          <div className=" h-50 col-span-3 row-span-2 bg-gray-300 rounded-3xl">  </div>
-          <div className=" h-50 row-span-3 col-span-7">
-            <Image
-              src={"/assets/images/build.jpg"}
-              width={500}
-              height={100}
-              alt='design'
-              className=' w-full h-full object-cover rounded-2xl' />
-          </div>
-
+      <div className=' flex xs:max-md:flex-col gap-6  h-[500px] xs:max-md:h-auto '>
+        <div className=" h-50 basis-5/12 ">
+          <Image
+            src={"/assets/images/design.jpg"}
+            width={531}
+            height={531}
+            alt='design'
+            className='aspect-square object-cover h-full w-full rounded-2xl'
+          />
         </div>
-      
+
+        <div className='basis-7/12  flex gap-y-6 flex-col'>
+            <div className='basis-5/12  flex gap-6'>
+              <div className=" h-[183px]   bg-gray-300 rounded-3xl">
+                <Image
+                  src={"/assets/images/projector.jpg"}
+                  width={531}
+                  height={531}
+                  alt='design'
+                  className='object-cover h-full rounded-2xl'
+                />
+              </div>
+              <div className=" h-[183px] bg-gray-300 rounded-3xl">  
+              <Image
+                  src={"/assets/images/conferenceroom.jpg"}
+                  width={531}
+                  height={531}
+                  alt='design'
+                  className=' object-cover h-full w-full rounded-2xl'
+                />
+
+              </div>
+
+            </div>
+            <div className=" basis-7/12 ">
+                <Image
+                src={"/assets/images/build.jpg"}
+                width={500}
+                height={100}
+                alt='design'
+                className=' w-full h-[280px]  object-cover rounded-2xl' />
+            </div>
+        </div>
+
+
+      </div>
     </section>
   )
 }
+
+
+
 
 export default Events

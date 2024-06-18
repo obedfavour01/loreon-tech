@@ -4,12 +4,18 @@ import Image from "next/image"
 const Gallery = () => {
   return (
     <div className="mx-32 
+    xs:max-lg:mx-0
+    xs:max-lg:gap-2
     mt-16 flex 
     xs:max-lg:overflow-hidden
     items-center 
     justify-center h-[500px] gap-6">
 
-      <div className="">
+      <div className=" self-start mt-10">
+        <div className="text-center mb-6">
+          <h1 className="font-black  text-4xl">620+</h1>
+          <p className="text-sm">Projects Completed</p>
+        </div>
         <Image alt="first"
           src={"/assets/images/firstGall.jpg"}
           width={400}

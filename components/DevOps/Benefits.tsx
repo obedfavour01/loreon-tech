@@ -17,6 +17,7 @@ const Benefits = ({type}:{type:string}) => {
             <div className='flex xs:max-lg:flex-col justify-between gap-8'>
 
                 <div className='h-[400px] 
+                   
                     w-[576px] 
                     xs:max-lg:w-full
                     xs:max-lg:h-[260px] 
@@ -66,7 +67,7 @@ const Benefits = ({type}:{type:string}) => {
                         bgColor= {type == "Devops"? devopsBlue: dataGreen} textColor='#fff' text='Attention to details' />
                     </div>
 
-                    <p className='w-1/2 text-lg my-4'>We provide concept specifics trainings for 
+                    <p className='w-1/2 xs:max-lg:w-full text-lg my-4'>We provide concept specifics trainings for 
                         our <span className='font-black '>{type}</span> trainees to get real experience 
                         they need in real world scenarios
                     </p>

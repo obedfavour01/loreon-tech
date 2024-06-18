@@ -1,9 +1,9 @@
 import React from 'react'
 import Question from './Question'
 
-const FAQ = () => {
+const FAQ = ({color}:{color?: string}) => {
   return (
-    <section className='mx-36  xs:max-lg:mx-6 my-12'>
+    <section className='mx-36  xs:max-lg:mx-6 mb-40'>
         
         <header className='font-bold text-4xl text-center my-6'>
             Frequently asked questions</header>
@@ -12,13 +12,14 @@ const FAQ = () => {
             Get the best services at the lowest price
         </p>
 
-        <div className='flex flex-wrap xs:max-lg:flex-col gap-y-12'>
-                <Question/>
-                <Question/>
-                <Question/>
-                <Question/>
-                <Question/>
-                <Question/>
+        <div className='flex  flex-wrap xs:max-lg:flex-col gap-y-12'>
+                <Question textColor = {color}/>
+                <Question textColor = {color}/>
+                <Question textColor = {color}/>
+                <Question textColor = {color}/>
+                <Question textColor = {color}/>
+                <Question textColor = {color}/>
+               
         </div>
     </section>
   )

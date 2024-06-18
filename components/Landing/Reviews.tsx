@@ -5,13 +5,13 @@ import ReviewCarousel from './ReviewCarousel';
 
 const Reviews = () => {
     return (
-        <section className='my-44' >
+        <section className='my-24  mx-32 xs:max-md:mx-7' >
 
-            <div className='flex items-center xs:max-lg:mx-6 mx-32'>
+            <div className='flex items-center xs:max-lg:mx-6 '>
                 <div>
                     <p className='text-sm font-normal text-loreonblue/55 uppercase mb-4'>What customers says</p>
 
-                    <h1 className='text-5xl font-bold'>
+                    <h1 className='text-5xl xs:max-lg:text-2xl font-bold'>
                         What people have to say about us
                     </h1>
                 </div>
@@ -21,7 +21,6 @@ const Reviews = () => {
             </div>
 
                     <ReviewCarousel />
-
 
 
 

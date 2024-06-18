@@ -4,7 +4,7 @@ import Brand from './Brand'
 
 const Customers = () => {
   return (
-    <section className='flex gap-12 mx-36 my-28'>
+    <section className='flex xs:max-md:flex-col gap-12 mx-36 xs:max-xl:mx-7 my-28'>
 
       <div className='basis-1/2 py-10'>
         <h1 className='font-bold text-5xl'>When our customers win, we win too.</h1>

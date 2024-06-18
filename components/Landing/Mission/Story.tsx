@@ -10,20 +10,19 @@ const Story = () => {
     return (
         <section className='
             flex
-            xs:max-lg:flex-col
-            xs:max-lg:itens-center
-            xs:max-lg:mx-7
-            mx-auto
-            
             gap-24
-            w-max
-            xs:max-lg:w-screen
+            xs:max-lg:flex-col
+            xs:max-sm:mx-6
+            mx-24
             mt-20 mb-32 
              justify-center'>
-           
-            <div className=' max-w-max mx-auto  xs:max-lg:'>
-                <VisionCards />
-                <MissionCards />
+
+            <div className=' basis-1/2  md:max-xl:justify-center sm:justify-end  flex justify-end'>
+                <div>
+                    <VisionCards />
+                    <MissionCards />
+
+                </div>
             </div>
             <BackStory />
         </section>

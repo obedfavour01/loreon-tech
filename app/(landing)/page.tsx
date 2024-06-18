@@ -15,7 +15,7 @@ import Blog from '@/components/Landing/Blog/Blog'
 
 const page = () => {
   return (
-    <div>
+    <div className=' overflow-x-hidden'>
 
       <Hero />
       <Services />

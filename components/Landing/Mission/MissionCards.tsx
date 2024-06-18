@@ -8,11 +8,11 @@ const MissionCards = () => {
             rounded-5xl
              bg-[#FFF8F0] 
              px-12 py-14 
-             xs:max-lg:px-3 
-             xs:max-lg:py-4
+             xs:max-md:px-3 
+             xs:max-md:py-4
              -mt-20 
-             xs:max-lg:-mt-7
-             xs:max-lg:right-10
+             xs:max-md:-mt-7
+             xs:max-md:right-10
              right-16 
              text-left relative'>
 
@@ -31,15 +31,15 @@ const MissionCards = () => {
                 height={1000}
                 alt='woman'
                 className='w-[70px] 
-                xs:max-lg:w-11 
+                xs:max-md:w-11 
                 absolute -left-4 -top-5 z-40 object-contain rounded-full border border-gray-700'
             />
             <h1 className='text-sm font-bold pb-3'> Our Mission</h1>
             <p className='font-normal 
             xs:max-lg:mx-4
             text-base 
-            xs:max-lg:text-[9px]
-            w-80 xs:max-lg:w-48'>
+            xs:max-md:text-[11px]
+            w-80 xs:max-md:w-48'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Incidunt sed vel neque placeat perferendis totam, ad enim
                 numquam expedita ipsum deserunt.

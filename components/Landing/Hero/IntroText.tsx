@@ -3,7 +3,7 @@ import React from 'react'
 
 const IntroText = () => {
   return (
-    <div className='xs:max-md:mx-2  md:mx-28 lg:mx-32 xl:mx-48 '>
+    <div className='xs:max-md:mx-6  md:mx-28 lg:mx-32 xl:mx-48 '>
         <h1 className='text-6xl xs:max-md:text-4xl font-bold text-center leading-[80px]'>
             <div className='flex justify-center  gap-5'> 
                 <div className=''>
@@ -27,8 +27,21 @@ const IntroText = () => {
             <span className='text-loreonorange'>Delivering Innovations</span> 
            </div>
             
-            <div>
+            <div className='flex justify-between xs:max-lg:justify-center'>
+            <Image 
+                src={"/assets/images/icon (2).png"} 
+                alt='memoji' 
+                width={200} 
+                height={200} 
+                className=' w-28 h-28 xs:max-lg:hidden self-end'/>
+
                 at warp speed
+                <Image 
+                    src={"/assets/images/sucesshero.png"} 
+                    alt='memoji' 
+                    width={500} 
+                    height={400} 
+                    className=' w-56 h-28 shadow-md rounded-md xs:max-lg:hidden'/>
 
             </div>
             

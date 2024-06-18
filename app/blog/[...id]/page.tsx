@@ -1,8 +1,10 @@
 import { content } from '@/lib/blogpost'
-import { HiArrowSmRight, HiOutlineArrowSmLeft , HiOutlineArrowSmRight} from "react-icons/hi";
+import { HiArrowSmRight, HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
 import Image from 'next/image'
 import React from 'react'
 import { Button } from '@/components/ui/button';
+import ReviewCarousel from '@/components/Landing/ReviewCarousel';
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -51,6 +53,14 @@ const page = () => {
            lg:mx-80'>
         <Button className='bg-loreonblue gap-4'><HiOutlineArrowSmLeft /> Previous </Button>
         <Button className='bg-loreonblue gap-4'> Next<HiArrowSmRight /></Button>
+      </div>
+
+      <div className = ''>
+        <header className='flex justify-between my-6 mx-40'>
+          <h1 className='text-3xl font-semibold'>Related projects</h1>
+          <Link href={"/projects"}><p className='text-xl hover:underline'>See More</p></Link>
+        </header>
+        <ReviewCarousel />
       </div>
     </div>
   )
