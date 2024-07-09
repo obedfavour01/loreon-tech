@@ -1,60 +1,78 @@
 "use client"
+import { AiFillInfoCircle } from "react-icons/ai";
+import Image from "next/image"
+
+
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm } from 'react-hook-form'
+import { formSchema } from "@/lib/utils";
+
+import {z} from "zod"
+
+
 
 import { Button } from "@/components/ui/button"
 import {
-    Form,
-    FormControl,
-    FormDescription,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
+Form,
+FormControl,
+FormDescription,
+FormField,
+FormItem,
+FormLabel,
+FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import { useForm } from 'react-hook-form'
 import { Checkbox } from "../ui/checkbox"
 
-
-import { AiFillInfoCircle } from "react-icons/ai";
-import Image from "next/image"
 
 
 const items = [
     {
         id: "recents",
+        name:"devops",
         label: "DevOps",
     },
     {
         id: "home",
+        name: "devOpsOneOnone",
         label: "DevOps(One-On-One)",
     },
     {
         id: "applications",
+        name:"data",
         label: "Data",
     },
     {
         id: "desktop",
+        name: "dataOneOnOne",
         label: "Data(One-On-One)"
     }
 
 ] as const
 
 
+
 const EnrolForm = () => {
 
     const lorenBlue = "#0069FF";
-    const form = useForm()
+
+    const form = useForm<z.infer<typeof formSchema>>({
+        resolver: zodResolver(formSchema),
+        defaultValues: {
+          firstName: "",
+        },
+    })
 
 
     return (
         <Form {...form}>
             <form className="space-y-8">
 
-                <div className="flex gap-4 xs:max-lg:flex-col">
+                <div className="flex gap-4 xs:max-md:flex-col">
 
                     <FormField
                         control={form.control}
-                        name="username"
+                        name="firstName"
                         render={({ field }) => (
                             <FormItem className="w-1/2 xs:max-lg:w-full">
                                 <FormLabel>First Name</FormLabel>
@@ -68,28 +86,28 @@ const EnrolForm = () => {
 
                     <FormField
                         control={form.control}
-                        name="username"
+                        name="lastName"
                         render={({ field }) => (
                             <FormItem className="w-1/2 xs:max-lg:w-full">
-                                <FormLabel>First Name</FormLabel>
+                                <FormLabel>Last Name</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Your First Name" className="bg-gray-100" {...field} />
+                                    <Input placeholder="Your Last Name" className="bg-gray-100" {...field} />
                                 </FormControl>
                             </FormItem>
                         )}
                     />
                 </div>
 
-                <div className="flex gap-4 xs:max-lg:flex-col">
+                <div className="flex gap-4 xs:max-md:flex-col">
 
                     <FormField
                         control={form.control}
-                        name="username"
+                        name="email"
                         render={({ field }) => (
                             <FormItem className="w-1/2 xs:max-lg:w-full">
-                                <FormLabel>First Name</FormLabel>
+                                <FormLabel>Email Address</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Your First Name" className="bg-gray-100" {...field} />
+                                    <Input type={"email"} placeholder="Your First Name" className="bg-gray-100" {...field} />
                                 </FormControl>
                                 <FormMessage></FormMessage>
                             </FormItem>
@@ -98,28 +116,28 @@ const EnrolForm = () => {
 
                     <FormField
                         control={form.control}
-                        name="username"
+                        name="phoneNumber"
                         render={({ field }) => (
                             <FormItem className="w-1/2 xs:max-lg:w-full">
-                                <FormLabel>First Name</FormLabel>
+                                <FormLabel>Phone Number</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Your First Name" className="bg-gray-100" {...field} />
+                                    <Input type={"tel"} placeholder="Your First Name" className="bg-gray-100" {...field} />
                                 </FormControl>
                             </FormItem>
                         )}
                     />
                 </div>
 
-                <div className="flex gap-4 xs:max-lg:flex-col">
+                <div className="flex gap-4 xs:max-md:flex-col">
 
                     <FormField
                         control={form.control}
-                        name="username"
+                        name="country"
                         render={({ field }) => (
                             <FormItem className="w-1/2 xs:max-lg:w-full">
-                                <FormLabel>First Name</FormLabel>
+                                <FormLabel>Country</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Your First Name" className="bg-gray-100" {...field} />
+                                    <Input placeholder="Your Country" className="bg-gray-100" {...field} />
                                 </FormControl>
                                 <FormMessage></FormMessage>
                             </FormItem>
@@ -128,26 +146,26 @@ const EnrolForm = () => {
 
                     <FormField
                         control={form.control}
-                        name="username"
+                        name="city"
                         render={({ field }) => (
                             <FormItem className="w-1/2 xs:max-lg:w-full">
-                                <FormLabel>First Name</FormLabel>
+                                <FormLabel>City</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Your First Name" className="bg-gray-100" {...field} />
+                                    <Input placeholder="City Of Residence" className="bg-gray-100" {...field} />
                                 </FormControl>
                             </FormItem>
                         )}
                     />
                 </div>
 
-                <div className="flex gap-4 xs:max-lg:flex-col">
+                <div className="flex gap-4 xs:max-md:flex-col">
 
                     <FormField
                         control={form.control}
-                        name="username"
+                        name="loreon"
                         render={({ field }) => (
                             <FormItem className="w-full">
-                                <FormLabel>First Name</FormLabel>
+                                <FormLabel>How did you hear about Loreon</FormLabel>
                                 <FormControl>
                                     <Input placeholder="Your First Name" className="bg-gray-100" {...field} />
                                 </FormControl>
@@ -168,7 +186,7 @@ const EnrolForm = () => {
                         <FormField
                             key={item.id}
                             control={form.control}
-                            name="items"
+                            name= {item.name}
                             render={({ field }) => {
                                 return (
                                     <FormItem
@@ -177,7 +195,7 @@ const EnrolForm = () => {
                                     >
                                         <FormControl>
                                             <Checkbox
-                                                checked={field.value?.includes(item.id)}
+                                                checked={field.value?.toString().includes(item.id)}
                                                 className="flex items-center"
                                             />
                                         </FormControl>
@@ -198,7 +216,7 @@ const EnrolForm = () => {
 
                     <FormField
                         control={form.control}
-                        name="Amount"
+                        name="amount"
                         render={({ field }) => (
                             <FormItem className="w-full">
                                 <FormLabel>Amount</FormLabel>
@@ -215,7 +233,7 @@ const EnrolForm = () => {
                 <div className="flex gap-4 xs:max-lg:flex-col">
                     <FormField
                         control={form.control}
-                        name="Cardholder name"
+                        name="cardName"
                         render={({ field }) => (
                             <FormItem className="w-full">
                                 <FormLabel>Cardholder name</FormLabel>
@@ -232,7 +250,7 @@ const EnrolForm = () => {
                 <div className="flex gap-4 xs:max-lg:flex-col">
                     <FormField
                         control={form.control}
-                        name="Card Number"
+                        name="cardNumber"
                         render={({ field }) => (
                             <FormItem className="w-full">
                                 <FormLabel>Card Number</FormLabel>
@@ -245,7 +263,7 @@ const EnrolForm = () => {
                     />
                 </div>
 
-                
+
                 <div className="ml-auto w-max">
                     <Image
                         width={800}
@@ -255,18 +273,19 @@ const EnrolForm = () => {
                         className="h-max w-max"
                     />
                 </div>
-               
+
 
                 <div className="flex gap-4 xs:max-lg:flex-col">
 
                     <FormField
                         control={form.control}
-                        name="username"
+                        name="date"
                         render={({ field }) => (
                             <FormItem className="w-1/2 xs:max-lg:w-full">
                                 <FormLabel>First Name</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Your First Name" className="bg-gray-100" {...field} />
+                                    <Input 
+                                        type = "date" placeholder="12/23" className="bg-gray-100" {...field} />
                                 </FormControl>
                                 <FormMessage></FormMessage>
                             </FormItem>
@@ -275,12 +294,14 @@ const EnrolForm = () => {
 
                     <FormField
                         control={form.control}
-                        name="username"
+                        name="cvv"
                         render={({ field }) => (
                             <FormItem className="w-1/2 xs:max-lg:w-full">
                                 <FormLabel>First Name</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Your First Name" className="bg-gray-100" {...field} />
+                                    <Input 
+                                    type="number"
+                                    placeholder="Your First Name" className="bg-gray-100" {...field} />
                                 </FormControl>
                             </FormItem>
                         )}
@@ -300,7 +321,7 @@ const EnrolForm = () => {
                 <div>
                     <FormField
                         control={form.control}
-                        name="items"
+                        name="terms"
                         render={({ field }) => {
                             return (
                                 <FormItem

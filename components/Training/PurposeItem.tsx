@@ -20,7 +20,7 @@ const PurposeItem = ({PurposeTitle,PurposeDetails,className}:purpose) => {
         </div>
         <div className=' xs:max-lg:basis-10/12 basis-11/12'>
             <h2 className='font-bold text-2xl text-white xs:max-lg:text-base '>{PurposeTitle}</h2>
-            <p className='text-white font-normal text-lg xs:max-lg:text-xs'>{PurposeDetails}</p>
+            <p className='text-white font-light text-lg xs:max-lg:text-xs mt-2.5'>{PurposeDetails}</p>
         </div>
     </div>
   )}

@@ -136,7 +136,7 @@ const ProjectCharts = () => {
       >
         <Tooltip />
         <Legend verticalAlign="top" align={"right"} height={48} />
-        <Line name="Sandbox" type="monotone" dataKey="Sandbox" stroke="#232323" />
+        <Line name="Sandbox" type="monotone" dataKey="Sandbox" stroke="#fff" />
         <Line name="graduating" type="monotone" dataKey="graduating" stroke="#FFFFFF" />
         <Line name="incubated" type="monotone" dataKey="incubated" stroke="#588FFF" />
 
@@ -153,7 +153,8 @@ const ProjectCharts = () => {
 
         />
         <YAxis tick={{ fill: 'white' }} />
-        <Bar dataKey="sandbox" fill="#232323" width={6} strokeWidth={12} />
+        <Bar dataKey="sandbox" fill="#232323" width={6} 
+        style={{border: "2px solid red"}} strokeWidth={12} />
         <Bar dataKey="graduating" fill="#FFFFFF" width={6} />
         <Bar dataKey="incubated" fill="#588FFF" width={6} />
 

@@ -3,20 +3,21 @@ import React from 'react'
 
 const ImagesData = [
     "core.png","contour.png","cri.png","crossplane.png",
-    "cube.png","dapr.png","dragon.png","flash.png","rook.png","spiffe.png","core.png","telemetry.png","spire.png",
-    "core.png","strimzi.png","prom.png","open.png"
+    "cube.png","dapr.png","dragon.png","flash.png","rook.png","spiffe.png","cortex.png","telemetry.png","spire.png",
+    "core.png","strimzi.png","prom.png","open.png","Thanos.png","core.png"
 ]
 const Startups = () => {
     return (
-        <section className='mx-32 xs:max-md:mx-6'>
+        <section className='mx-16 xs:max-md:mx-6 my-20'>
             <div className='flex xs:max-lg:flex-col justify-between gap-36'>
                 <div className='basis-1/2'>
-                    <header className='text-4xl font-bold'>We support early stage
+                    <header className='text-4xl font-bold font-cool'>
+                        We support early stage
                         startups and leading tech
                         giants. 
                     </header>
 
-                    <article className='mt-4 leading-[28px] pr-6 '>
+                    <article className='mt-4 leading-[28px] pr-6 text-base font-roboto font-light'>
                         Join us on a journey beyond boundaries, where innovation isn&apos;t
                         just a destination
                         – it&apos;s the very fabric of our existence. At LOREON Technology, we&apos;re
@@ -44,7 +45,7 @@ const Startups = () => {
 
 
 
-            <div className='my-24 px-10 xs:max-lg:px-2 '>
+            <div className='my-24 mx-28 xs:max-lg:px-2 '>
                 <div className='flex  flex-wrap xs:max-lg:flex-wrap gap-12 my-12 justify-center'>
                     {
                         ImagesData.map((img,ind) => (
@@ -54,7 +55,9 @@ const Startups = () => {
                             key={ind}
                             src={`/assets/images/${img}`} 
                             alt="logo" 
-                            width={800} height={800} className='object-contain w-16 h-16' />
+                            width={900} height={900} 
+                            loading='lazy'
+                            className='object-contain w-16 h-16' />
                         ))
                     }
                    

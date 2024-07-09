@@ -3,7 +3,7 @@ import ProjectCharts from './ProjectCharts'
 
 const Stats = () => {
   return (
-    <section className='bg-loreonblue text-white'>
+    <section className='bg-black text-white'>
 
             <div className='mx-36 xs:max-lg:mx-6 py-12'>
                 <h1 className='font-bold text-5xl xs:max-md:text-3xl'>
@@ -27,7 +27,7 @@ const Stats = () => {
             </div>
 
 
-            <div className=' mx-24 xs:max-lg:mx-6'>
+            <div className=' mx-36 xs:max-lg:mx-6'>
                 <h1 className='text-4xl xs:max-md:text-2xl font-bold my-9'>
                   Projects Accepted Each Year
                 </h1>

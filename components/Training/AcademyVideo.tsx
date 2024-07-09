@@ -2,6 +2,8 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 
+
+
 const AcademyVideo = () => {
   const factor = 0.3
   return (
@@ -14,7 +16,7 @@ const AcademyVideo = () => {
         light={false}
         // picture in picture
         pip={true}
-        style={{width:`${factor*16}vw`, height: `${factor*9}vw`}}
+        style={{width:`${factor*4}vw`, height: `${factor*3}vw`}}
         
         />
   )

@@ -1,6 +1,7 @@
 import React, { ReactHTMLElement } from 'react'
 import StackedCards from './StackedCards'
 import { FaArrowRightLong } from 'react-icons/fa6'
+import Image from 'next/image'
 
 
 type ServiceProps = {
@@ -14,42 +15,27 @@ type ServiceProps = {
 const ServiceCard = ({ title,stackColor,arrowColor,arrowbgColor,img }: ServiceProps) => {
   return (
 
-    <div className='mt-7  lg:basis-1/3 xs:max-lg:min-w-[404px] max-w-[404px]'>
-      <div className='flex flex-col min-w-max h-80  rounded-5xl bg-[#2F2F2F] relative'>
+    <div className='  rounded-6xl shrink-0 h-[510px] w-[381px] relative  overflow-hidden'>
 
-        <div className="basis-2/12">
-          <h1 className='font-semibold text-2xl text-white px-4 py-4'>{title}</h1>
-        </div>    
+      <Image
+        src={img}
+        height={800}
+        width={800}
+        alt='service'
+        className='object-cover h-full w-full'
+      />
 
-        <div className='bg-[#5C5C5C] w-full h-[.5px]'></div>
+      <div className='service-card-overlay absolute top-0 bottom-0 left-0 right-0'></div>
 
-        <div className="basis-10/12">
-          <StackedCards stackColor = {stackColor} img = {img}/>
-        </div>  
-
-
-        <div className='w-16
-               h-16
-               flex 
-               justify-center 
-               absolute 
-               items-center 
-               bottom-0 right-3
-                rounded-full
-                z-[999]'
-                style={{backgroundColor:arrowbgColor}}>
-        <FaArrowRightLong className='-rotate-[45deg]' size={20} color={arrowColor} />
-          
-        </div>
-      </div>
-
-      <div className='mt-8'>
-        <p className='text-lg text-[#5c5c5c] z-30'>
-          Lorem ipsum dolor sit amet consectetur adipiscing
-          elit Ut et massa mi. Aliquam in hendrerit urna.
-          Pellentesque sit amet sapien fringilla,
-          mattis ligula consectetur, ultrices mauris.
-        </p>
+      <div className='text-white absolute top-0 bottom-0 w-full px-8 py-6 flex flex-col justify-between'>
+          <h3 className="text-2xl ">{title}</h3>
+          <p className="text-sm">
+              Lorem ipsum dolor sit amet consectetur
+              adipiscing elit Ut et massa mi. Aliquam 
+              in hendrerit urna. Pellentesque sit amet 
+              sapien fringilla, mattis ligula consectetur,
+              ultrices mauris. 
+          </p>
       </div>
     </div>
   )

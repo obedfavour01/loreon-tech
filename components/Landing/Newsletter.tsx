@@ -4,7 +4,7 @@ import React from 'react'
 
 const Newsletter = () => {
     return (
-        <section className='mx-52 flex xs:max-lg:flex-col xs:max-lg:mx-8 items-center gap-8 my-24'>
+        <section className='mx-40 flex xs:max-md:flex-col xs:max-lg:mx-7 lg:max-2xl:mx-24 items-center gap-8 my-24'>
             <div className='basis-1/2'>
                 <h1 className='text-4xl font-bold text-[#69707C] py-2 leading-[44px]'>
                     Sign up for our newsletter

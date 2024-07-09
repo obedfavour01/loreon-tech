@@ -1,16 +1,26 @@
+import FAQ from '@/components/Landing/FAQ/FAQ'
 import Academy from '@/components/Training/Academy'
-import Mission from '@/components/Training/Mission'
+import CTA from '@/components/Training/CTA'
+import Careers from '@/components/Training/Careers'
+import Graduates from '@/components/Training/Graduates'
+import Guarantee from '@/components/Training/Guarantee'
 import Purpose from '@/components/Training/Purpose'
-import RoleCertification from '@/components/Training/RoleCertification'
+import Testimonials from '@/components/Training/Testimonials'
+import TrainingHero from '@/components/Training/TrainingHero'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-        <Mission/>
+        <TrainingHero/>
+        <Careers/>
         <Academy/>
         <Purpose/>
-        <RoleCertification/>
+        <Testimonials/>
+        <Graduates/>
+        <Guarantee/>
+        <CTA/>
+        <FAQ/>
 
     </div>
   )

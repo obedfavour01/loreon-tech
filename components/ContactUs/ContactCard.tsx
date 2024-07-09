@@ -8,6 +8,7 @@ const ContactCard = () => {
         <div className=' relative
                      bg-white 
                       xs:max-lg:mx-6 
+                      lg:max-2xl:mx-24
                       xs:max-lg:p-6 
                       p-20 
                       mx-60 
