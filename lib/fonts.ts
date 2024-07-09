@@ -19,7 +19,7 @@ export const RobotoFonts = Roboto({
   )
   
 export const Coolvetica = localFont({
-  src: './fonts/coolvetica rg.ttf',
+  src: '../app/fonts/coolvetica rg.ttf',
   display: 'swap',
   variable: '--font-coolvetica'
 })
