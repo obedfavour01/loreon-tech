@@ -20,7 +20,7 @@ const NewsCards = () => {
 
           <h1 
             className={` 
-              font-bold xs:max-lg:text-[10px]            xs:max-md:leading-4
+              font-bold xs:max-lg:text-[10px]       xs:max-md:leading-4
               text-xl 
               xs:max-md:mt-2 
               mt-5`}>
