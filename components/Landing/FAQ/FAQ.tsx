@@ -9,7 +9,7 @@ import {
   AccordionTrigger
 }
   from '@/components/ui/accordion'
-import { RobotoFonts } from '@/app/layout'
+
 
 const FAQ = ({ color }: { color?: string }) => {
   return (

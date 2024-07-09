@@ -1,34 +1,11 @@
-import localFont from 'next/font/local'
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Landing/Footer/Footer";
 
-
-
-import {  Arimo, Inter, Poppins, Roboto, Syne } from "next/font/google"
 import Navbar from '@/components/Navbar';
+import { Coolvetica, RobotoFonts } from "@/lib/fonts";
 
- const RobotoFonts = Roboto({
-    weight: ["100","300","400","700","900"],
-    subsets:['latin'],
-    variable: "--font-roboto"
-})
-  
-   const Pop = Poppins({
-    weight: ["400","500","600","700","800"],
-    subsets:["latin-ext"]}
-  )
-  
-   const InterFonts = Inter({
-    weight: ["400","500","600","700","800"],
-    subsets:["latin"]}
-  )
-  
- const Coolvetica = localFont({
-  src: './fonts/coolvetica rg.ttf',
-  display: 'swap',
-  variable: '--font-coolvetica'
-})
+
 
 
 export const metadata: Metadata = {

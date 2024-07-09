@@ -1,7 +1,7 @@
 import React from 'react'
 import { Input } from '../ui/input'
 import { Button } from '../ui/button'
-import { Pop } from '@/app/layout'
+import { Pop } from '@/lib/fonts'
 
 const NewProjects = () => {
     return (
