@@ -1,5 +1,13 @@
 import type { Config } from "tailwindcss"
 
+const svgToDataUri = require("mini-svg-data-uri");
+ 
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
+
 const config = {
   darkMode: ["class"],
   content: [
@@ -100,30 +108,73 @@ const config = {
         bg_footer: "#1D2329",
         bg_about_gray: "#F0F6FF"
       },
+      background: {
+      
+      },
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(180deg, rgba(74, 186, 88, 0.1) 0%, #4ABA58 100%)',
-        'training-gradient':'linear-gradient(180deg, rgba(65,129,245,1) 0%, rgba(66,129,245,1) 73%, rgba(250,253,255,1) 99%)',
+        'custom-gradient': 'linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 100%);',
         'devops-gradient':'linear-gradient(180deg, rgba(19, 98, 243, 0) 0%, #1362F3 100%)',
         'experience-gradient': 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)',
         'session-gradient': ' linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)',
         'data-gradient': 'linear-gradient(180deg, rgba(32, 168, 78, 0) 0%, #20A84E 100%)',
-        'blog-gradient': ' linear-gradient(184.16deg, rgba(0, 0, 0, 0) 16.94%, rgba(0, 0, 0, 0.7) 78.01%)'
+        'blog-gradient': ' linear-gradient(180deg, rgba(0, 4, 11, 0) 0%, #00040B 100%)',
+        'training-hero': "linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/assets/images/training/devopsman.jpeg')",
+        
+        
       },
       boxShadow: {
         'custom-shadow': '0px 8px 20px 0px #1211271A',
+        'training-shadow':  '0px 24.16px 60.41px 0px #12112714'
       },
       borderColor: {
           'purpose-border':'linear-gradient(95.49deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 50.64%, #CDCDCD 99.29%)'
         },
 
       
-
-      width: {
-        
-      }
+        fontFamily: {
+          cool: 'var(--font-coolvetica)',
+          roboto:'var(--font-roboto)',
+        }
+    
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),
+    addVariablesForColors,
+    function ({ matchUtilities, theme }: any) {
+      matchUtilities(
+        {
+          "bg-grid": (value: any) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
+            )}")`,
+          }),
+          "bg-grid-small": (value: any) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="8" height="8" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
+            )}")`,
+          }),
+          "bg-dot": (value: any) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="1.6257413380501518"></circle></svg>`
+            )}")`,
+          }),
+        },
+        { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
+      );
+    },
+  ],
 } satisfies Config
+
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
 
 export default config

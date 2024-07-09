@@ -3,7 +3,7 @@ import React from 'react'
 
 const Brand = () => {
   return (
-    <div className='flex justify-center p-4 items-center bg-bg_about_gray'>
+    <div className='flex justify-center  w-[272px] h-[104px] p-4 items-center bg-bg_about_gray'>
             <Image
             
             src={"/assets/images/vercel.svg"}

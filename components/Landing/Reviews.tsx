@@ -5,7 +5,7 @@ import ReviewCarousel from './ReviewCarousel';
 
 const Reviews = () => {
     return (
-        <section className='my-24  mx-32 xs:max-md:mx-7' >
+        <section className='py-24  px-40 xs:max-md:mx-7 bg-[#FAFAFA]' >
 
             <div className='flex items-center xs:max-lg:mx-6 '>
                 <div>

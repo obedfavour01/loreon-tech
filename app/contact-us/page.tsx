@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div className='mt-64 xs:max-lg:mt-48'>
 
-      <div className='bg-loreonblue relative w-full min-h-screen'>
+      <div className='bg-black relative w-full min-h-screen'>
         <ContactCard/>
       </div>
         <Newsletter/>

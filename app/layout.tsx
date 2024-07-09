@@ -1,8 +1,34 @@
+import localFont from 'next/font/local'
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Landing/Footer/Footer";
-import Navbar from "@/components/Navbar";
-import { SyneFonts } from "@/lib/fonts";
+
+
+
+import {  Arimo, Inter, Poppins, Roboto, Syne } from "next/font/google"
+import Navbar from '@/components/Navbar';
+
+ const RobotoFonts = Roboto({
+    weight: ["100","300","400","700","900"],
+    subsets:['latin'],
+    variable: "--font-roboto"
+})
+  
+   const Pop = Poppins({
+    weight: ["400","500","600","700","800"],
+    subsets:["latin-ext"]}
+  )
+  
+   const InterFonts = Inter({
+    weight: ["400","500","600","700","800"],
+    subsets:["latin"]}
+  )
+  
+ const Coolvetica = localFont({
+  src: './fonts/coolvetica rg.ttf',
+  display: 'swap',
+  variable: '--font-coolvetica'
+})
 
 
 export const metadata: Metadata = {
@@ -16,18 +42,15 @@ export const metadata: Metadata = {
 };
 
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head><script src='/assets/scripts/loading.js' async /></head>
-      <body className={SyneFonts.className}>
-        <Navbar/>
+    <html lang="en" 
+      className = {`${Coolvetica.variable} ${RobotoFonts.variable}`}>
+      <body>
         {children}
         <Footer/>
         </body>

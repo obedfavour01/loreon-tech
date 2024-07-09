@@ -1,11 +1,11 @@
-import BlogMenu from '@/components/Blog/BlogMenu'
+import BlogHero from '@/components/Blog/BlogHero'
 import News from '@/components/Blog/News'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
-        <BlogMenu/>
+    <div className=''>
+        <BlogHero/>
         <News/>
         
     </div>

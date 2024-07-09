@@ -3,7 +3,7 @@ import React from 'react'
 
 const Community = () => {
     return (
-        <section className='flex bg-[#4ABA58] xs:max-md:flex-col gap-8 px-28 xs:max-xl:px-7 py-20'>
+        <section className='flex bg-black xs:max-md:flex-col gap-8 px-28 xs:max-xl:px-7 py-20'>
             <div className='basis-5/12 '>
                 <h1 className='font-bold text-4xl md:max-xl:text-2xl  leading-10 text-white'>
                     We are a community of doers who use open source
@@ -17,7 +17,9 @@ const Community = () => {
                     becoming some of the highest velocity
                     projects in the history of open source.
                 </p>
+               
 
+                background: 
 
                     <CommunityStats/>
             </div>

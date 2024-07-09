@@ -3,17 +3,17 @@ import Collaboration from '@/components/AboutUs/Collaboration'
 import Community from '@/components/AboutUs/Community'
 import Customers from '@/components/AboutUs/Customers'
 import Events from '@/components/AboutUs/Events'
+import HeroAboutUs from '@/components/AboutUs/HeroAboutUs'
 import Team from '@/components/AboutUs/Team'
+import WhatWeDo from '@/components/AboutUs/WhatWeDo'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-       <AboutHero/>
-       <Collaboration/>
-       <Team/>
+       <HeroAboutUs/>
+       <WhatWeDo/>
        <Community/>
-       <Events/>
        <Customers/>
     </div>
   )

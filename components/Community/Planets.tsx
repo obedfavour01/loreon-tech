@@ -15,13 +15,15 @@ const Planets = () => {
           className=' object-contain h-min ' />
       </div>
 
-    <div className='mx-96 xs:max-lg:mx-7 text-center my-8'>
-      <h1 className="text-4xl xs:max-md:text-3xl font-bold">
-        Join our community of thriving and growing techies
-      </h1>
-      <p className='text-[#6D7692] text-2xl mt-5 '>We are here for you....</p>
+      <div className='mx-96 lg:max-2xl:mx-48 xs:max-lg:mx-7 text-center my-8'>
+        <h1 className="text-4xl xs:max-md:text-3xl font-bold">
+          Join our community of thriving and growing techies
+        </h1>
+        <p className='text-[#6D7692] text-2xl mt-5 '>
+          We are here for you....
+        </p>
 
-    </div>
+      </div>
     </div>
   )
 }
