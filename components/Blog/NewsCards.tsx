@@ -1,4 +1,4 @@
-import { Pop } from '@/app/layout'
+import { Pop } from '@/lib/fonts'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'

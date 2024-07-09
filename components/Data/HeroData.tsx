@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Navbar from '../Navbar'
-import { RobotoFonts } from '@/app/layout'
+import { RobotoFonts } from '@/lib/fonts'
 
 
 const HeroData = () => {

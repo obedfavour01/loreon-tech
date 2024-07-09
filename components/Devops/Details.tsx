@@ -1,4 +1,4 @@
-import { RobotoFonts } from '@/app/layout'
+import { RobotoFonts } from '@/lib/fonts'
 import { StringifyOptions } from 'querystring'
 import React from 'react'
 
