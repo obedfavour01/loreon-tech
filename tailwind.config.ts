@@ -121,6 +121,7 @@ const config = {
         'training-hero': "linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/assets/images/training/devopsman.jpeg')",
         
         
+        
       },
       boxShadow: {
         'custom-shadow': '0px 8px 20px 0px #1211271A',

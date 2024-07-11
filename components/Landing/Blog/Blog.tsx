@@ -3,7 +3,7 @@ import BlogPost from './BlogPost'
 
 const Blog = () => {
   return (
-    <section className='bg-black px-40 py-24 xs:max-xl:px-6  xs:max-lg:py-12 box-border'>
+    <section className='bg-black min-h-screen px-40 py-36 xs:max-xl:px-6  xs:max-lg:py-12 box-border'>
       <div>
         <h3 className='text-loreonorange'>FROM THE BLOG</h3>
 

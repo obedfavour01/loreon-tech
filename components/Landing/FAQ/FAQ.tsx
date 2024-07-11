@@ -11,80 +11,86 @@ import {
   from '@/components/ui/accordion'
 
 
-const FAQ = ({ color }: { color?: string }) => {
+const FAQ_Data  = [
+  {
+    value: "item_1",
+    question:"Can I upgrade myself or do I have to upgrade my entire Workspace?",
+    answer: `To upgrade Dlex, you’ll need 
+    to upgrade your entire Workspace, 
+    which means all members in your Workspace.
+     The top level of organization is Workspace.`
+  },
+  {
+    value: "item_2",
+    question:"What payment methods do you accept?",
+    answer: `To upgrade Dlex, you’ll need 
+    to upgrade your entire Workspace, 
+    which means all members in your Workspace.
+     The top level of organization is Workspace.`
+  },
+  {
+    value: "item_3",
+    question:"What is your refund policy?",
+    answer: `To upgrade Dlex, you’ll need 
+    to upgrade your entire Workspace, 
+    which means all members in your Workspace.
+     The top level of organization is Workspace.`
+  },
+  {
+    value: "item_4",
+    question:"Do you offer discounts for nonprofits?",
+    answer: `To upgrade Dlex, you’ll need 
+    to upgrade your entire Workspace, 
+    which means all members in your Workspace.
+     The top level of organization is Workspace.`
+  },
+  {
+    value: "item_5",
+    question:"How am I billed when I add new members to a Workspace?",
+    answer: `To upgrade Dlex, you’ll need 
+    to upgrade your entire Workspace, 
+    which means all members in your Workspace.
+     The top level of organization is Workspace.`
+  },
+
+]
+const FAQ = ({variant}:{variant: 'light' | 'dark'}) => {
   return (
     <section className='mx-36  xs:max-lg:mx-6 mb-40 pt-24'>
 
-      <header className='font-bold text-4xl text-center my-6'>
-        Frequently asked questions</header>
+      <header className={`font-bold text-4xl text-center my-6 ${variant == "light"? 'text-black':'text-white'}`}>
+        Frequently asked questions
+      </header>
 
-      <p className='mb-8 text-[#1211278F] text-center text-sm font-semibold'>
-        Can’t find the answer you’re looking for? Reach out to our customer support team
+      <p className={`mb-8 text-center 
+        ${variant == "light"? 'text-black':'text-[#606060]'}
+        text-sm font-light`}>
+        Can’t find the answer you’re looking for? Reach out to our 
+          <span className='text-[#4E8AF4]'> customer support </span> team
       </p>
-
+      
       <div className=''>
         <Accordion type="single" collapsible className="w-full">
-          <AccordionItem value="item-1">
-            <AccordionTrigger>
-              <h1 className='text-[#121127] text-xl'>
-                Can I upgrade myself or do I have to upgrade my entire Workspace?
-              </h1>
-            </AccordionTrigger>
-            <AccordionContent>
-              <p className={`  text-[18px]`}>
-                To upgrade Dlex, you’ll need to upgrade your entire Workspace, which means all members in your Workspace. The top level of organization is Workspace.</p>
-            </AccordionContent>
-          </AccordionItem>
 
-          <AccordionItem value="item-2">
-            <AccordionTrigger>
-              <h1 className='text-[#121127] text-xl'>
-                What payment methods do you accept?
-              </h1>
-            </AccordionTrigger>
-            <AccordionContent>
-              <p className={`  text-[18px]`}>
-                To upgrade Dlex, you’ll need to upgrade your entire Workspace, which means all members in your Workspace. The top level of organization is Workspace.</p>
-            </AccordionContent>
-          </AccordionItem>
+          {
+            FAQ_Data.map((item,ind) => (
+              <AccordionItem value={item.value} key={item.value}>
+              <AccordionTrigger>
+                <h1 className={`text-xl ${variant == "light"? 'text-[#121127]':'text-white'}`}>
+                  {item.question}
+                </h1>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className={` ${variant == "light"? 'text-black':'text-[#606060]'} text-lg font-light`}>
+                  {item.answer}
+                </p>
+              </AccordionContent>
+            </AccordionItem>
 
-          <AccordionItem value="item-3">
-            <AccordionTrigger>
-              <h1 className='text-[#121127] text-xl'>
-                What is your refund policy?
-              </h1>
-            </AccordionTrigger>
-            <AccordionContent>
-              <p className={`  text-[18px]`}>
-                To upgrade Dlex, you’ll need to upgrade your entire Workspace, which means all members in your Workspace. The top level of organization is Workspace.</p>
-            </AccordionContent>
-          </AccordionItem>
+            ))
+          }
+          
 
-
-          <AccordionItem value="item-4">
-            <AccordionTrigger>
-              <h1 className='text-[#121127] text-xl'>
-                Do you offer discounts for nonprofits?
-              </h1>
-            </AccordionTrigger>
-            <AccordionContent>
-              <p className={`  text-[18px]`}>
-                To upgrade Dlex, you’ll need to upgrade your entire Workspace, which means all members in your Workspace. The top level of organization is Workspace.</p>
-            </AccordionContent>
-          </AccordionItem>
-
-
-          <AccordionItem value="item-5">
-            <AccordionTrigger>
-              <h1 className='text-[#121127] text-xl'>
-                How am I billed when I add new members to a Workspace?
-              </h1>
-            </AccordionTrigger>
-            <AccordionContent>
-              <p className={`  text-[18px]`}>
-                To upgrade Dlex, you’ll need to upgrade your entire Workspace, which means all members in your Workspace. The top level of organization is Workspace.</p>
-            </AccordionContent>
-          </AccordionItem>
         </Accordion>
 
       </div>

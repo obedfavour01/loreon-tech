@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className='xs:max-lg:mx-6 lg:mx-6
          xs:max-lg:px-6
-         py-16'>
+         mt-44 mb-24'>
 
         <h1 className='font-semibold text-[##343434] px-[85px] font-roboto text-3xl xs:max-lg:hidden'>
           Explore a few services we offer

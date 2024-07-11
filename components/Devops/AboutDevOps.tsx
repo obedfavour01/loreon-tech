@@ -1,9 +1,10 @@
 import React from 'react'
 import Member from '../AboutUs/Member'
+import Requirements from './Requirements'
 
 const AboutDevOps = () => {
   return (
-    <section className='flex mx-[86px]  mt-52 '>
+    <section className='flex mx-[86px]  my-48 items-center'>
         <div className='basis-7/12 py-5 mr-14 space-y-4'>
           <h1 className='text-4xl font-medium'>What is the DevOps Engineering Programme?</h1>
           <p className='text-[#586283]'>
@@ -21,8 +22,9 @@ const AboutDevOps = () => {
             globally-recognised AWS Cloud Practitioner and 
             Solutions Architect certifications from Amazon Web Services.
           </p>
+          <Requirements/>
         </div>
-        <div className='basis-4/12 border-l-2 border-loreonblue pl-14 leading-8 py-5 '>
+        <div className='basis-4/12 border-l-2 h-max border-loreonblue pl-14 leading-8 py-5 '>
             <p className='text-[#586283]'>
             This has profound impact on my career development.
              The programme exceeded my expectations in every way.

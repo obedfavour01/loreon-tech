@@ -21,14 +21,14 @@ import {
 from "@/components/ui/accordion"
 
 
-const MobileSidebar = () => {
+const MobileSidebar = ({variant}:{ variant: 'dark' | 'light' }) => {
   return (
     <div>
       <div>
         <Sheet>
           <SheetTrigger>
             <div className='lg:hidden' >
-              <Menu size={28} fill="black" />
+              <Menu size={28} color = {variant === 'light' ? "black" : "white"}  />
             </div>
           </SheetTrigger>
 

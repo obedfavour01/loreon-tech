@@ -3,9 +3,9 @@ import ProjectCharts from './ProjectCharts'
 
 const Stats = () => {
   return (
-    <section className='bg-black text-white'>
+    <section className='bg-black text-white py-20'>
 
-            <div className='mx-36 xs:max-lg:mx-6 py-12'>
+            <div className='mx-36 xs:max-lg:mx-6 pb-12'>
                 <h1 className='font-bold text-5xl xs:max-md:text-3xl'>
                     When we say that Sandbox projects are “early stage,” this covers the following examples
                 </h1>

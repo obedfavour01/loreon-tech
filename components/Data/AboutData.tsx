@@ -1,9 +1,10 @@
 import React from 'react'
 import Member from '../AboutUs/Member'
+import Requirements from '../Devops/Requirements'
 
 const AboutData = () => {
     return (
-        <section className='flex mx-[86px]  mt-52 '>
+        <section className='flex mx-[86px]  my-48 items-center '>
             <div className='basis-7/12 py-5 mr-14 space-y-4'>
                 <h1 className='text-4xl font-medium'>
                     What is Data Analysis Programme?
@@ -11,8 +12,9 @@ const AboutData = () => {
                 <p className='text-[#586283]'>
                     Developed in partnership with ExploreAI, a leader in Data Analytics education. The first 8 weeks are ALX Foundations, where you will learn critical communication, leadership, and career development skills that will help you thrive in the digital workforce. During the data analytics specialisation, you will focus your attention on real-world applications of data analysis and gain a basic understanding of how to explore, analyse, transform, and visualise data. In the end, you will receive a certificate of completion in Data Analytics.
                 </p>
+                <Requirements/>
             </div>
-            <div className='basis-4/12 border-l-2 border-datagreen pl-14 leading-8 py-5 '>
+            <div className='basis-4/12 border-l-2 h-max border-datagreen pl-14 leading-8 py-5 '>
                 <p className='text-[#586283]'>
                     This has profound impact on my career development.
                     The programme exceeded my expectations in every way.

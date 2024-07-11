@@ -6,7 +6,14 @@ import React from 'react'
 const HeroTextbox = () => {
     return (
 
-        <div className="h-full pt-20 w-full basis-1/2 dark:bg-dot-white/[0.2] bg-dot-gray-700/70 relative flex items-center px-[85px]">
+        <div className="h-full 
+                    py-20 w-full 
+                    basis-1/2 dark:bg-dot-white/[0.2] 
+                    bg-dot-gray-700/70 
+                    relative 
+                    flex 
+                    items-center 
+                    px-[85px]">
         <div>
             <MovingButton
                 borderRadius="1.75rem"

@@ -29,7 +29,7 @@ const page = () => {
       <Blog />
       <Newsletter />
       <Reviews />
-      <FAQ />
+      <FAQ variant='light'/>
 
     </div>
   )

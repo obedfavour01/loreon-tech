@@ -8,7 +8,7 @@ const Contactlayout = ({
 }) => {
   return (
     <section>
-      <Navbar navClassName="text-black" />
+      <Navbar variant="light" />
       {children}
     </section>
   )
