@@ -17,6 +17,7 @@ export const formSchema = z.object({
   country: z.string().min(2),
   city: z.string().min(2),
   loreon: z.string(),
+  track: z.string(),
   amount: z.string(),
   cardName : z.string().min(2),
   cardNumber: z.string(),
