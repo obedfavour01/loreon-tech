@@ -186,7 +186,7 @@ const EnrolForm = () => {
                         <FormField
                             key={item.id}
                             control={form.control}
-                            name= {item.name}
+                            name= "track"
                             render={({ field }) => {
                                 return (
                                     <FormItem
