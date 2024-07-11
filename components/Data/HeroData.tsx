@@ -9,7 +9,7 @@ const HeroData = () => {
   return (
     <div className=' relative border-t-[0.1px] border-green-300/70 max-h-[700px] data-gradient '>
 
-      <Navbar />
+      <Navbar type='dark' />
       <Image
         src="/assets/images/training/devherolor.png"
         width={626}

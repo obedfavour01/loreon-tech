@@ -11,15 +11,14 @@ import FAQ from "@/components/Landing/FAQ/FAQ"
 const page = () => {
   return (
     <div>
-        <HeroData/>
-        <Details type="data"/>
-        <AboutData/>
-        <Requirements/>
-        <Skills/>
-        <Fees type = 'data'/>
-        <DataPower/>
-        <Admission type = 'data'/>
-        <FAQ/>
+      <HeroData />
+      <Details type="data" />
+      <AboutData />
+      <Skills />
+      <Fees type='data' />
+      <DataPower />
+      <Admission type='data' />
+      <FAQ variant='light' />
 
     </div>
   )

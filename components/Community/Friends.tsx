@@ -26,7 +26,7 @@ const Friends = () => {
 
       <div className=''>
 
-        <FAQ color = {"#606060"}/>
+        <FAQ variant='dark'/>
       </div>
 
     </div>

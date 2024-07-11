@@ -8,7 +8,7 @@ const HeroDevOps = () => {
   return (
     <div className=' relative border-t-[0.1px] border-blue-300/70 max-h-[700px] devops-gradient '>
 
-      <Navbar />
+      <Navbar variant='dark' />
       <Image
         src="/assets/images/training/devherolor.png"
         width={626}

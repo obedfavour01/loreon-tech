@@ -5,31 +5,28 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 
 type NavItemProps = {
-    text?: string, 
-    href?: string,
-    children?: React.ReactNode,
-    navClassName? : string
+  text?: string,
+  href?: string,
+  children?: React.ReactNode,
+  className?: string
 }
 
 
-const NavItem = ({children,text,href,navClassName = "#"}:NavItemProps) => {
+const NavItem = ({ children, text, href = "#",className }: NavItemProps) => {
 
   const path = usePathname();
- 
+
   return (
-    <Link 
-      href={href} 
-      className={cn(`text-[#fff] text-sm hover:text-gray-400 ${path ===  href && `text-black`}`,navClassName)} 
-      passHref>
-
-  {
-        children ||
-        <p>
-            {text}</p>
+    <Link
+      href={href}
+      className={
+        cn(`text-sm hover:text-gray-400 font-light font-roboto
+              ${path === href && `text-black`}`,className)
       }
-
-   
-    
+      passHref>
+      {
+        children || <p> {text} </p>
+      }
     </Link>
   )
 }

@@ -9,11 +9,11 @@ import HeroImgBox from './NewHero/HeroImgBox'
 
 const Hero = () => {
   return (
-    <section className=' xs:max-lg:mt-8 bg-black '>
-      <Navbar/>
+    <section className=' xs:max-lg:mt-8 bg-black relative top-0 '>
+      <Navbar variant='dark'/>
       <div className='flex py-8 '>
-        <HeroTextbox/>
-        <HeroImgBox/>
+        <HeroTextbox />
+        <HeroImgBox />
       </div>
 
     </section>

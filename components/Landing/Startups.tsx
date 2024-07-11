@@ -8,7 +8,7 @@ const ImagesData = [
 ]
 const Startups = () => {
     return (
-        <section className='mx-16 xs:max-md:mx-6 my-20'>
+        <section className='mx-16 xs:max-md:mx-6 mt-32 mb-48 '>
             <div className='flex xs:max-lg:flex-col justify-between gap-36'>
                 <div className='basis-1/2'>
                     <header className='text-4xl font-bold font-cool'>

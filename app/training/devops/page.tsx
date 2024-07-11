@@ -16,15 +16,15 @@ const page = () => {
       <Head>
         <title>The Best Devops </title>
       </Head>
-        <HeroDevOps/>
-        <Details type='devops'/>
-        <AboutDevOps/>
-        <Requirements/>
-        <Skills/>
-        <Fees type = 'devops'/>
-        <Solutions/>
-        <Admission type = 'devops'/>
-        <FAQ/>
+      <HeroDevOps />
+      <Details type='devops' />
+      <AboutDevOps />
+      
+      <Skills />
+      <Fees type='devops' />
+      <Solutions />
+      <Admission type='devops' />
+      <FAQ variant='light' />
 
     </div>
   )

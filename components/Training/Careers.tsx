@@ -1,23 +1,19 @@
-import React from 'react'
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs"
+"use client"
+import React, { useState } from 'react'
+
 import Image from 'next/image'
 import { Button } from '../ui/button'
+import Tabs from '../Tabs'
 
 const Careers = () => {
+  const [activeChild, setActiveChild] = useState('all');
+  const handleTabChange = (tab:string) => {
+    setActiveChild(tab)
+  }
   return (
-    <div className='mt-28'>
+    <div className='mt-36'>
 
-      <div className='flex gap-8 justify-center'>
-        <h2>All</h2>
-        <h2>Data</h2>
-        <h2>Devops</h2>
-      </div>
-
+      <Tabs onTabChange={handleTabChange}/>
 
       <div className='my-24'>
         <div className='text-center '>
@@ -29,8 +25,15 @@ const Careers = () => {
         </div>
 
         <div className='flex gap-5 justify-center mt-9'>
-          <CareerCards />
-          <CareerCards />
+
+            {activeChild === 'all' && 
+                <div className='flex gap-4'>
+                  <CareerCards variant='devops'/>
+                  <CareerCards variant='data'/>
+              </div>
+            }
+        {activeChild === 'data' &&<CareerCards variant='data'/>}
+        {activeChild === 'devops' && <CareerCards variant='devops'/>}
         </div>
 
       </div>
@@ -39,10 +42,10 @@ const Careers = () => {
 }
 
 
-const CareerCards = () => (
+const CareerCards = ({variant}:{variant:'data' | 'devops'}) => (
   <div className='w-[270px] h-[313px] rounded-t-lg overflow-hidden'>
     <Image
-      src="/assets/images/training/teams.jpeg"
+      src={ variant === "data" ? "/assets/images/training/teams.jpeg" : "/assets/images/training/team.jpeg" }
       width={800}
       height={800}
       className='w-full h-[145px] object-cover'
@@ -50,7 +53,7 @@ const CareerCards = () => (
 
 
     <div className='text-[#002A76] mx-6 my-3.5'>
-      <h1 className=' text-xl'>DevOps Engineering</h1>
+      <h1 className=' text-xl'>{ variant === "data" ? "Data Analytics" : "DevOps Engineering" }</h1>
       <p className='text-xs font-light'>6 Months</p>
 
 

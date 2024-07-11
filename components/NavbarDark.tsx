@@ -19,30 +19,21 @@ import Link from 'next/link'
 import { ChevronDown, ChevronUp, Mail, MessageSquare, PlusCircle, UserPlus } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
-const Navbar = ({ className, variant }: { className?: string, variant: 'dark' | 'light' }) => {
+const Navbar = ({className}:{className?:string}) => {
 
   return (
-    <div className={cn('flex justify-between items-center mb-3 px-20 pt-9 xs:max-lg:px-6 xs:max-lg:mt-4', className)}>
-      {
-        variant == "light" ? <DarkLogo /> : <Logo />
-      }
-      <MobileSidebar variant = {variant}/>
+    <div className={cn('flex justify-between items-center mb-3 px-20 pt-9 xs:max-lg:px-6 xs:max-lg:mt-4',className)}>
+      <DarkLogo />
+      <MobileSidebar />
       <div className='flex gap-6 items-center xs:max-lg:hidden'>
-        <NavItem 
-          text="About" 
-          href="/about-us" 
-          className={variant === 'light' ? 'text-black' : 'text-white'} />
-        <NavItem text="Projects" 
-          href="/projects"
-          className={variant === 'light' ? 'text-black' : 'text-white'} />
+        <NavItem text="About" href="/about-us" className='text-'/>
+        <NavItem text="Projects" href= "/projects"/>
         <DropdownMenu>
           <DropdownMenuTrigger >
-            <NavItem 
-              href=''
-              className={variant === 'light' ? 'text-black' : 'text-white'}>
+            <NavItem href=' '>
               <span className='flex items-center'>
                 <span >Training</span>
-                <span> <ChevronDown /></span>
+                <span> <ChevronDown/></span>
               </span>
             </NavItem>
           </DropdownMenuTrigger>
@@ -96,30 +87,14 @@ const Navbar = ({ className, variant }: { className?: string, variant: 'dark' | 
         </DropdownMenu>
 
 
-        <NavItem 
-          text="Community" 
-          href='/community'
-          className={variant === 'light' ? 'text-black' : 'text-white'} />
+        <NavItem text="Community" href='/community'/>
 
+        <NavItem text="Blogs & News" href='/blog'/>
 
+        <NavItem text="Contact Us" href='/contact-us'/>
 
-        <NavItem 
-          text="Blogs & News" 
-          href='/blog'
-          className={variant === 'light' ? 'text-black' : 'text-white'} />
-
-
-
-        <NavItem 
-          text="Contact Us" 
-          href='/contact-us'
-          className={variant === 'light' ? 'text-black' : 'text-white'} />
-
-
-        <Button className={`${variant === 'light' ?
-          `bg-loreonblue text-white` :
-          `bg-white text-loreonblue `}  rounded-xl`}>
-          Get started
+        <Button className='bg-white text-loreonblue rounded-xl'> 
+          Get started 
         </Button>
       </div >
     </div >

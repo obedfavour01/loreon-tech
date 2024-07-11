@@ -1,7 +1,7 @@
 "use client"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from 'react-hook-form'
-import { formSchema, SignUpFormSchema } from "@/lib/utils";
+import {  SignUpFormSchema } from "@/lib/utils";
 
 import { z } from "zod"
 

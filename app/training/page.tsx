@@ -12,18 +12,18 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-        <TrainingHero/>
-        <Careers/>
-        <Academy/>
-        <Purpose/>
-        <Testimonials/>
-        <Graduates/>
-        <Guarantee/>
-        <CTA/>
-        <FAQ/>
+      <TrainingHero />
+      <Careers />
+      <Academy />
+      <Purpose />
+      <Testimonials />
+      <Graduates />
+      <Guarantee />
+      <CTA />
+      <FAQ variant='light' />
 
     </div>
   )
 }
-  
+
 export default page
