@@ -1,7 +1,8 @@
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import React from 'react'
 import { IoIosArrowDropright } from 'react-icons/io'
-import { Button } from '../../ui/button'
+
 
 const Group = ({ type }: { type: string }) => {
     return (

@@ -2,7 +2,6 @@ import Image from 'next/image'
 import React from 'react'
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { FaArrowRightLong, FaCircleArrowRight } from "react-icons/fa6";
-import { FaArrowRight } from 'react-icons/fa';
 import Cards from './Cards';
 
 
